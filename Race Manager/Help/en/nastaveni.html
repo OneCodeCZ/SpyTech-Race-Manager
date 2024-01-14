@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><a href="javascript:history.back();">Back</a> | <a href="index.html">Content</a></p>
+<h2>Settings</h2>
+<p>(Command <i>Tools | Settings</i>)</p>
+<p>
+  In this property sheet dialog window you may set up the basic parameters of the track
+  and STM/2008 communication.
+</p>
+<img src="img/dlg_settings_track.gif">
+<p>
+  Put in the owner's name, the track's name and its length in centimeters (so that
+  correct average speed may be correctly calculated). Very important is the
+  correct assignment of the colors to the lanes.
+</p>
+<img src="img/dlg_settings_stm2008.gif">
+<p>
+  Switch to the STM/2008 page of the property sheet. Here you may set up the parameters
+  of the connection to the STM/2008 device which works as the interface between your track
+  and the PC. Specify the COM port which the track is connected to (<i>Port selection</i> item)
+  and specify whether to invert the sensors or not (<i>Invert sensors</i> item). Dead strip
+  tracks usually don't require the sensors to be inverted, tracks with the optical sensors
+  usually do.
+<p>
+  The <i>Sensor - Lane mapping</i> allows you to assign arbitrary lane to any sensor.
+  By default, the sensor 1 is mapped to the lane 1, sensor 2 to lane 2 and so on. You may
+  use this if the sensors were assigned in a different manner. If you are not sure,
+  which sensor is assigned to which lane, use the Automatic mapping feature which is
+  described in the dialog window itself.
+<p>
+  Note for MS Windows NT, 2000 and XP users: After the installation of the program,
+  on the first operation which requires a communication between the PC and
+  STM/2008 (any race mode or lane mapping is started), a dialog window to set up the
+  serial port parameters is shown. Put in the following:
+<p>
+<ul>
+  <li>Transfer speed (bits per second): 19200</li>
+  <li>Data bits (byte length): 8</li>
+  <li>Parity: None</li>
+  <li>Stop-bits count: 1</li>
+  <li>Data flow control: None</li>
+</ul>
+</body>
+</html>

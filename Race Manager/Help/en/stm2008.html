@@ -1,0 +1,67 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><a href="javascript:history.back();">Zpět</a> | <a href="index.html">Obsah</a></p>
+<h2>STM/2008</h2>
+<h3>Popis vývodů</h3>
+<ul>
+  <li> DC 12V IN: Vstup napájení</li>
+  <li>RS 232 IN/OUT: Datový kabel k propojení s počítačem</li>
+  <li>SENSORS IN: Signálové vodiče od senzorů dráhy (viz níže)</li>
+  <li>PWR CTRL OUT: K připojení obvodu spínaného spínačem (viz níže)</li>
+</ul>
+<h3>Připojení senzorů na přerušení dráhových vodičů </h3>
+<ul>
+  <li> Červený vodič: spínací napětí senzorů. Společný pro všechny dráhy, připojit 
+    na přerušení dráhového vodiče “-”</li>
+  <li> Černý vodič: zem zařízení, nepřipojovat</li>
+  <li> Ostatní vodiče: jednotlivé senzory, připojit na přerušení dráhových vodičů 
+    “+”. Přiřazení senzorů jednotlivým drahám může být definováno až v programu 
+    Race Manager pomocí funkce <i>Přemapování drah</i> (viz <a href="nastaveni.html">Nastavení</a>) 
+    není proto nutné uvádět zde význam barev vodičů.</li>
+</ul>
+<h3>Připojení senzorů na optické snímače </h3>
+<blockquote> 
+  <p>Snímače je třeba připojit přes rozhraní (invertující zesilovač), které zajistí 
+    správné úrovně napětí na vstupech senzorů. Je třeba věnovat zvýšenou pozornost 
+    ochraně před rušením – používat stíněné vodiče, signál zesilovat co nejblíže 
+    u jednotlivých snímačů apod.</p>
+</blockquote>
+<ul>
+  <li> Červený vodič: spínací napětí senzorů (U<sub>sp</sub>); nepoužívat k&nbsp;napájení 
+    externích obvodů</li>
+  <li> Černý vodič: zem zařízení</li>
+  <li> Ostatní vodiče: jednotlivé senzory; spínací napětí volit v rozsahu U<sub>sp</sub> 
+    .. 16V. Přiřazení senzorů jednotlivým drahám může být definováno až v programu 
+    Race Manager (viz <a href="nastaveni.html">Nastavení</a>), není proto nutné 
+    uvádět zde význam barev vodičů.</li>
+</ul>
+<h3>Elektrické charakteristiky</h3>
+<ul>
+  <li>Napájení: 
+    <ul>
+      <li>Napájecí napětí (U<sub>CC</sub>): 10 - 16V DC.</li>
+      <li> Maximální odebíraný proud: 60 mA. </li>
+    </ul>
+  </li>
+  <li>Senzory: 
+    <ul>
+      <li>Spínací napětí senzorů: U<sub>sp</sub> &gt; 0.6 U<sub>CC.</sub></li>
+      <li> Vstupní odpor senzorů: 13kOhm.</li>
+    </ul>
+  </li>
+  <li>Spínač: 
+    <ul>
+      <li>Mezní hodnoty: 0,5A; 10VA. </li>
+    </ul>
+  </li>
+</ul>
+<h3></h3>
+<p>&nbsp;</p>
+</body>
+</html>

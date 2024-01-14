@@ -1,0 +1,8 @@
+\debug\
+\release\
+\debug release\
+.opt
+.ilk
+.exe
+.dll
+

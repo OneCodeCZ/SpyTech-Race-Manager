@@ -1,0 +1,1193 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "WsfCmdId.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""WsfCmdId.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Data Managment.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Race Commander.ico"
+IDI_RECORD              ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_DRV                 ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_RACE                ICON    DISCARDABLE     "res\\race.ico"
+IDI_GROUP               ICON    DISCARDABLE     "res\\group.ico"
+IDI_STOPS               ICON    DISCARDABLE     "res\\stops.ico"
+IDI_STAR                ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_TRACK               ICON    DISCARDABLE     "res\\course.ico"
+IDI_COLORS              ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_STM                 ICON    DISCARDABLE     "res\\stm.ico"
+IDI_TOOLS               ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_FILETYPE            ICON    DISCARDABLE     "res\\filetype.ico"
+IDI_TEAM_DATA           ICON    DISCARDABLE     "res\\team_dat.ico"
+IDI_DRV_DATA            ICON    DISCARDABLE     "res\\ico00005.ico"
+IDI_START_DATA          ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_RS                  ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_ADVANCES            ICON    DISCARDABLE     "res\\advances.ico"
+IDI_POINTS              ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_SOUND               ICON    DISCARDABLE     "res\\ico00009.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SMALL_ICONS         BITMAP  DISCARDABLE     "res\\small icons.bmp"
+IDB_NORMAL_ICONS        BITMAP  DISCARDABLE     "res\\Normal Icons.bmp"
+IDB_SPYTECH_LOGO        BITMAP  DISCARDABLE     "res\\SpyTech Logo Small.bmp"
+IDB_ARROW               BITMAP  DISCARDABLE     "res\\arrow.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Soubor"
+    BEGIN
+        POPUP "Nový"
+        BEGIN
+            MENUITEM "ID_RACE_NEW",                 ID_RACE_NEW
+            MENUITEM SEPARATOR
+            MENUITEM "ID_NEW_GLOBAL_TEAM",          ID_NEW_GLOBAL_TEAM
+            MENUITEM SEPARATOR
+            MENUITEM "ID_GLOBAL_NEW_DRIVER",        ID_GLOBAL_NEW_DRIVER
+            MENUITEM "ID_NEW_GLOBAL_RS",            ID_NEW_GLOBAL_RS
+            MENUITEM "ID_GLOBAL_NEW_FOLDER",        ID_GLOBAL_NEW_FOLDER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "ID_RACE_OPEN",                ID_RACE_OPEN
+        MENUITEM "ID_RACE_SAVE",                ID_RACE_SAVE
+        MENUITEM "ID_RACE_SAVE_AS",             ID_RACE_SAVE_AS
+        MENUITEM "ID_RACE_CLOSE",               ID_RACE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_EXPORT_DRIVERS",           ID_EXPORT_DRIVERS
+        MENUITEM "ID_IMPORT_DRIVERS",           ID_IMPORT_DRIVERS
+        MENUITEM SEPARATOR
+        MENUITEM "ID_FILE_PRINT",               ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "ID_FILE_MRU_FILE1",           ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "ID_APP_EXIT",                 ID_APP_EXIT
+    END
+    POPUP "Úpr&avy"
+    BEGIN
+        MENUITEM "ID_EDIT_CUT",                 ID_EDIT_CUT
+        MENUITEM "ID_EDIT_COPY",                ID_EDIT_COPY
+        MENUITEM "ID_EDIT_PASTE",               ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_WSF_RENAME",               ID_WSF_RENAME
+        MENUITEM "ID_WSF_DELETE",               ID_WSF_DELETE
+        MENUITEM "ID_EDIT_SELECT_ALL",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "ID_WSF_PROPERTIES",           ID_WSF_PROPERTIES
+    END
+    POPUP "&Závod"
+    BEGIN
+        MENUITEM "ID_RACE_START",               ID_RACE_START
+        MENUITEM "ID_ADD_TO_RACE",              ID_ADD_TO_RACE
+        MENUITEM "ID_RACE_RETURN",              ID_RACE_RETURN
+        MENUITEM SEPARATOR
+        MENUITEM "ID_RACE_NEXT_PART",           ID_RACE_NEXT_PART
+        MENUITEM "ID_EDIT_RIDES",               ID_EDIT_RIDES
+        MENUITEM "ID_RACE_FINISH_PART",         ID_RACE_FINISH_PART
+        MENUITEM SEPARATOR
+        MENUITEM "ID_EDIT_GROUPS",              ID_EDIT_GROUPS
+    END
+    POPUP "&Nástroje"
+    BEGIN
+        MENUITEM "ID_EXERCISE",                 ID_EXERCISE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_STM_TEST",                 ID_STM_TEST
+        MENUITEM "ID_SOUND_TEST",               ID_SOUND_TEST
+        MENUITEM "ID_EB_TEST",                  ID_EB_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "ID_SETUP",                    ID_SETUP
+    END
+    POPUP "&Nápovìda"
+    BEGIN
+        MENUITEM "ID_HELP",                     ID_HELP
+        MENUITEM "ID_BRIEF_HELP",               ID_BRIEF_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "ID_APP_ABOUT",                ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT_MENUS MENU DISCARDABLE 
+BEGIN
+    POPUP "TIDrvFolder"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM "&Smazat...\tDel",             ID_WSF_DELETE
+        MENUITEM "&Pøejmenovat...\tF2",         ID_WSF_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Nová složka...\tF3",         ID_NEW_FOLDER
+        MENUITEM "Nový &závodník...\tF4",       ID_NEW_DRIVER
+        MENUITEM SEPARATOR
+        MENUITEM "Export...",                   ID_EXPORT_DRV_FOLDER
+    END
+    POPUP "TIDriver+TIRS"
+    BEGIN
+        MENUITEM "ID_WSF_DELETE",               ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_ADD_TO_RACE",              ID_ADD_TO_RACE
+        MENUITEM "ID_WSF_PROPERTIES",           ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceManager"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Nastavení\tAlt+Enter",       ID_WSF_PROPERTIES
+    END
+    MENUITEM "Dummy",                       65535
+    POPUP "TIRSFolder"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Nový závodní systém...\tF5", ID_NEW_RS
+    END
+    POPUP "TIRace"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM "Nový &tým...\tF6",            ID_NEW_TEAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Ukonèit tvorbu",             ID_RACE_START
+        MENUITEM "&Návrat...",                  ID_RACE_RETURN
+        MENUITEM SEPARATOR
+        MENUITEM "&Zahájit/pokraèovat v mìøení èásti", ID_RACE_NEXT_PART
+        MENUITEM "Ú&prava výsledkù èásti",      ID_EDIT_RIDES
+        MENUITEM "Ukonèit &aktuální èást",      ID_RACE_FINISH_PART
+        MENUITEM SEPARATOR
+        MENUITEM "&Skupiny",                    ID_EDIT_GROUPS
+        MENUITEM SEPARATOR
+        MENUITEM "&Vlastnosti\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceTeam"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM "&Smazat...\tDel",             ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Vlastnosti\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceDrv"
+    BEGIN
+        MENUITEM "&Smazat...\tDel",             ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Vlastnosti\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "Databaze"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "TIGroups"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "TIResultsFolder"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "Helper"
+    BEGIN
+        MENUITEM "ID_EB_TEST",                  ID_EB_TEST
+        MENUITEM "ID_GLOBAL_NEW_DRIVER",        ID_GLOBAL_NEW_DRIVER
+        MENUITEM "ID_GLOBAL_NEW_FOLDER",        ID_GLOBAL_NEW_FOLDER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 220, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "O programu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,8,20,20
+    DEFPUSHBUTTON   "OK",IDOK,84,148,50,14,WS_GROUP
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP,44,48,33,33
+    LTEXT           "E-mail: info@spytech.cz",IDC_STATIC,96,48,92,8
+    LTEXT           "http://www.spytech.cz",IDC_STATIC,96,60,74,8
+    LTEXT           "RACE MANAGER 1.xx",IDC_TITLE,44,8,148,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,39,39,168,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,92,167,1
+    LTEXT           "Vývoj: Ing. Radek Tetík, Ing. Adam J. Sporka",
+                    IDC_STATIC,44,100,160,8
+    LTEXT           "Funkèní specifikace: Ing. Josef Korec",IDC_STATIC,44,
+                    112,160,8
+    LTEXT           "Zaøízení STM/2008: Ing. Jakub Ahmadyar",IDC_STATIC,44,
+                    124,160,8
+    LTEXT           "Hot-line:",IDC_STATIC,96,72,28,8
+    LTEXT           "Copyright (C) 2000–2004 SpyTech",IDC_STATIC,44,20,109,8
+    LTEXT           "+420-777-347-331",IDC_STATIC,124,72,63,8
+END
+
+IDD_DRV_BASIC DIALOG DISCARDABLE  0, 0, 216, 130
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Obecné"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,68,6,138,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURNAME,68,20,138,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICKNAME,68,34,138,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CLUB,68,60,140,92,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LICENCE_NUMBER,68,74,51,12,ES_AUTOHSCROLL
+    CONTROL         "Èlen &svazu",IDC_MEMBER_OF_UNION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,94,92,10
+    LTEXT           "&Jméno:",IDC_STATIC,8,6,24,12,SS_CENTERIMAGE
+    LTEXT           "&Pøíjmení:",IDC_STATIC,8,20,33,12,SS_CENTERIMAGE
+    LTEXT           "&Zobrazovat jako:",IDC_STATIC,8,34,56,12,SS_CENTERIMAGE
+    LTEXT           "&Klub/stát:",IDC_STATIC,8,60,52,14,SS_CENTERIMAGE
+    LTEXT           "&Licence è.:",IDC_STATIC,8,74,52,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,53,204,1
+END
+
+IDD_RS_BASIC DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Obecné"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,92,8,128,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DISTRIBUTION_TYPE,92,22,128,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CHANGING,92,36,56,100,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Kvalifikace",IDC_PART_QUAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,72,51,10
+    CONTROL         "Rozjížïky",IDC_PART_CONSI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,84,48,10
+    CONTROL         "Ètvrtfinále",IDC_PART_QUATER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,72,47,10
+    CONTROL         "Semifinále",IDC_PART_SEMI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,84,48,10
+    CONTROL         "Finále",IDC_PART_FINAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,72,35,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,62,240,1
+    LTEXT           "&Název:",IDC_STATIC,8,8,32,12,SS_CENTERIMAGE
+    LTEXT           "Rozdìlování do skupin:",IDC_STATIC,8,22,80,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Støídání drah:",IDC_STATIC,8,36,60,12,SS_CENTERIMAGE
+    LTEXT           "Èásti závodu",IDC_STATIC1,8,58,56,8
+    LTEXT           "Zpùsob hodnocení:",IDC_STATIC,20,118,63,8
+    CONTROL         "Poèet kol",IDC_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,92,118,52,10
+    CONTROL         "Nejlepší èas",IDC_TYPE2,"Button",BS_AUTORADIOBUTTON,156,
+                    118,60,10
+    LTEXT           "Poèet pokusù:",IDC_TEXT,20,130,47,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATA,92,130,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,108,239,1
+    LTEXT           "Kvalifikace",IDC_STATIC2,8,104,48,8
+END
+
+IDD_RS_ADVANCES DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Postupy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Do ètvrtfinále:",IDC_STATIC,16,19,52,14,SS_CENTERIMAGE
+    LTEXT           "Do semifinále:",IDC_STATIC,16,35,52,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_QUAL_QUATER,76,19,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUAL_SEMI,76,35,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUAL_FINAL,76,51,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Do finále:",IDC_STATIC,16,51,40,14,SS_CENTERIMAGE
+    LTEXT           "Celkem:",IDC_STATIC,120,19,36,14,SS_CENTERIMAGE
+    LTEXT           "Z každé skupiny:",IDC_STATIC,120,35,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONSI_BEST,180,19,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CONSI_GROUP,180,35,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Celkem:",IDC_STATIC,16,87,36,14,SS_CENTERIMAGE
+    LTEXT           "Z každé skupiny:",IDC_STATIC,16,103,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_QUATER_BEST,76,87,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUATER_GROUP,76,103,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Celkem:",IDC_STATIC,120,87,36,14,SS_CENTERIMAGE
+    LTEXT           "Z každé skupiny:",IDC_STATIC,120,103,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_SEMI_BEST,180,87,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SEMI_GROUP,180,103,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "Z kvalifikace",IDC_STATIC,8,8,96,63
+    GROUPBOX        "Z rozjížïek",IDC_STATIC,113,8,96,63
+    GROUPBOX        "Ze ètvrtfinále",IDC_STATIC,8,77,96,46
+    GROUPBOX        "Ze semifinále",IDC_STATIC,113,77,96,46
+END
+
+IDD_RS_TIMES DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Èasy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "WarmUp",IDC_STATIC,71,8,33,8
+    CTEXT           "Jízda",IDC_STATIC,123,8,33,8
+    CTEXT           "Pauza",IDC_STATIC,171,8,33,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,20,157,1
+    RTEXT           "Kvalifikace",IDC_STATIC,8,28,42,14,SS_CENTERIMAGE
+    RTEXT           "Rozjížïky",IDC_STATIC,8,44,42,14,SS_CENTERIMAGE
+    RTEXT           "Ètvrtfinále",IDC_STATIC,8,60,42,14,SS_CENTERIMAGE
+    RTEXT           "Semifinále",IDC_STATIC,8,76,42,14,SS_CENTERIMAGE
+    RTEXT           "Finále",IDC_STATIC,8,92,42,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_QUAL_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,28,45,12
+    CONTROL         "DateTimePicker1",IDC_QUAL_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,28,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,44,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,44,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,44,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,60,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,60,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,60,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,76,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,76,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,76,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,92,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,92,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,92,45,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,57,20,1,87
+END
+
+IDD_RACE DIALOGEX 0, 0, 240, 205
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Závod"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,12,223,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,14,114,217,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,174,215,1
+    EDITTEXT        IDC_NUMBER,76,20,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,76,34,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORGANIZER,76,48,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATE,76,62,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLACE,76,76,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JUDGE,76,90,151,12,ES_AUTOHSCROLL
+    LTEXT           "Organizaèní údaje",IDC_STATIC1,8,8,72,8
+    LTEXT           "Èíslo závodu:",IDC_STATIC,16,20,53,12,SS_CENTERIMAGE
+    LTEXT           "Název závodu:",IDC_STATIC,16,34,53,12,SS_CENTERIMAGE
+    LTEXT           "Poøadatel:",IDC_STATIC,16,48,53,12,SS_CENTERIMAGE
+    LTEXT           "Datum závodu:",IDC_STATIC,16,62,53,12,SS_CENTERIMAGE
+    LTEXT           "Místo konání:",IDC_STATIC,16,76,53,12,SS_CENTERIMAGE
+    LTEXT           "Hlavní rozhodèí:",IDC_STATIC,16,90,53,12,SS_CENTERIMAGE
+    LTEXT           "Typ závodu",IDC_STATIC2,8,110,48,8
+    CONTROL         "Typ závodu:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | WS_GROUP,16,122,52,12,WS_EX_ACCEPTFILES
+    COMBOBOX        IDC_RACE_TYPE,76,122,60,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Min. poèet èlenù:",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,16,136,60,
+                    12,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_MIN_MEMBERS,76,136,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Max. poèet èlenù:",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,16,150,60,
+                    12,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_MAX_MEMBERS,76,150,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Ostatní",IDC_STATIC3,8,170,32,8
+    LTEXT           "Min. èas na kolo:",IDC_STATIC,16,182,57,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN_TIME,76,182,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "[ms]",IDC_STATIC,109,182,14,14,SS_CENTERIMAGE
+    LTEXT           "(DD.MM.YYY)",IDC_STATIC,140,64,46,8
+END
+
+IDD_RE_START_DATA DIALOG DISCARDABLE  0, 0, 216, 122
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Startovní údaje"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE,68,8,140,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_RANKING,68,22,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Startovní poøadí:",IDC_STATIC,8,22,56,12,SS_CENTERIMAGE
+    LTEXT           "Zobrazovat jako:",IDC_STATIC,8,8,56,12,SS_CENTERIMAGE
+    LTEXT           "Zobrazovat jako:",IDC_STATIC,8,8,56,12,SS_CENTERIMAGE
+END
+
+IDD_SETUP_TRACK DIALOG DISCARDABLE  0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Autodráha"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,11,240,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,104,240,1
+    EDITTEXT        IDC_OWNER,88,20,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_NAME,88,34,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_LENGTH,88,48,32,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_NUM_LANES,88,62,32,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DIVISION_TYPE,88,76,60,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE1,56,113,36,308,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE2,56,129,36,296,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE3,56,145,36,348,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE4,56,161,36,268,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE5,148,113,36,308,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE6,148,129,36,376,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE7,148,145,36,416,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE8,148,161,36,384,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Název autodráhy:",IDC_STATIC,16,34,68,12,SS_CENTERIMAGE
+    LTEXT           "Délka autodráhy:",IDC_STATIC,16,48,68,12,SS_CENTERIMAGE
+    LTEXT           "cm",IDC_STATIC,125,51,10,12
+    LTEXT           "Poèet drah:",IDC_STATIC,16,62,56,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 1:",IDC_STATIC,16,114,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 2:",IDC_STATIC,16,130,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 3:",IDC_STATIC,16,146,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 4:",IDC_STATIC,16,162,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 5:",IDC_STATIC,108,114,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 6:",IDC_STATIC,108,130,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 7:",IDC_STATIC,108,146,34,12,SS_CENTERIMAGE
+    LTEXT           "Dráha 8:",IDC_STATIC,108,162,34,12,SS_CENTERIMAGE
+    LTEXT           "Dìlení na segmenty:",IDC_STATIC,16,76,67,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Majitel:",IDC_STATIC,16,20,36,12,SS_CENTERIMAGE
+    LTEXT           "Údaje o autodráze",IDC_STATIC1,8,8,76,8
+    LTEXT           "Barevné oznaèení drah",IDC_STATIC2,8,100,92,8
+END
+
+IDD_SETUP_STM DIALOGEX 0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "STM/2008"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COM,84,22,50,68,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Povolit pøemapování drah",IDC_TRACK_MAPPING_ENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,60,100,10
+    EDITTEXT        IDC_PHYSICAL_1,48,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_2,64,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_3,80,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_4,96,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_5,120,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_6,136,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_7,152,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_8,168,102,12,12,ES_NUMBER
+    PUSHBUTTON      "&Pøemapovat",IDC_REMAP,84,164,91,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,12,232,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,48,236,1
+    LTEXT           "Pøípojení STM/2008",IDC_STATIC1,8,8,80,8
+    LTEXT           "Výbìr zásuvky:",IDC_STATIC,16,22,64,12,SS_CENTERIMAGE
+    LTEXT           "Pøemapování drah",IDC_STATIC2,8,44,72,8
+    LTEXT           "Dráha:",IDC_STATIC,16,78,28,12,SS_CENTERIMAGE
+    CTEXT           "1",IDC_STATIC,48,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "2",IDC_STATIC,64,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "3",IDC_STATIC,80,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "4",IDC_STATIC,96,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "5",IDC_STATIC,120,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "6",IDC_STATIC,136,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "7",IDC_STATIC,152,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "8",IDC_STATIC,168,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Senzor:",IDC_STATIC,16,102,24,12,SS_CENTERIMAGE
+    GROUPBOX        "Automatické pøemapování",IDC_STATIC,16,124,228,60
+    LTEXT           "Kliknìte do editaèního pole senzoru, který chcete pro danou dráhu nastavit a stisknìte tlaèítko ""Pøemapovat"".",
+                    IDC_STATIC,24,140,212,16
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,172,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,140,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,156,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,84,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,100,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,124,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,52,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,68,94,5,6
+END
+
+IDD_FIRST_LANES DIALOG DISCARDABLE  0, 0, 256, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nastavení startovních drah"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "—",IDC_NAME1,8,46,71,12,SS_CENTERIMAGE
+    LTEXT           "—",IDC_NAME2,8,62,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME3,8,78,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME4,8,94,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME5,8,110,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME6,132,46,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME7,132,62,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME8,132,78,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME9,132,94,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME10,132,110,71,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_ENTITY1,84,46,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY2,84,62,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY3,84,78,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY4,84,94,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY5,84,110,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY6,208,46,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY7,208,62,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY8,208,78,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY9,208,94,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY10,208,110,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,75,134,50,14,WS_GROUP
+    PUSHBUTTON      "Storno",IDCANCEL,131,134,50,14
+    LTEXT           "Pøiøaïte závodníkùm startovní dráhy.\n\nPOZOR: V pøípadì návratu k urèiré jízdì, pøiøaïte dráhy stejnì jako pøed první jízdou.",
+                    IDC_STATIC,6,6,244,32
+END
+
+IDD_GROUPS_VIEW DIALOG DISCARDABLE  0, 0, 299, 204
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Nerozdìlení závodníci:",IDC_STATIC,8,4,74,8,
+                    SS_CENTERIMAGE
+    LISTBOX         IDC_UNDIVIDED_LIST,8,16,108,180,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Automaticky",IDC_AUTO,124,32,50,14
+    PUSHBUTTON      "&Tisk",IDC_PRINT,124,48,50,14
+    PUSHBUTTON      "&Pøidat -->",IDC_ADD,124,128,50,14
+    PUSHBUTTON      "<-- &Odebrat",IDC_REMOVE,124,144,50,14
+    PUSHBUTTON      "<-- Všic&hni",IDC_REMOVE_ALL,124,160,50,14
+    LTEXT           "Skupiny:",IDC_GROUPS_TEXT,184,4,32,8,SS_CENTERIMAGE
+    LISTBOX         IDC_GROUPS_LIST,184,16,108,60,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Pø&idat",IDC_ADD_GROUP,184,80,50,14
+    PUSHBUTTON      "Od&ebrat",IDC_REMOVE_GROUP,240,80,50,14
+    LTEXT           "Èlenové skupiny:",IDC_MEMBERS_TEXT,184,108,55,8
+    LISTBOX         IDC_MEMBERS_LIST,184,120,108,60,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Nahoru",IDC_UP,184,184,50,14
+    PUSHBUTTON      "&Dolù",IDC_DOWN,240,184,50,14
+END
+
+IDD_RS_POINTS DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Body"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Povolit bodování",IDC_ENABLE_POINTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,6,69,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,20,247,1
+    LTEXT           "Schéma bodù:",IDC_STATIC,8,26,51,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_POINTS_TYPE,8,39,188,116,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,58,188,114
+    PUSHBUTTON      "&Upravit",IDC_EDIT,204,58,50,14
+    PUSHBUTTON      "Vložit &pøed",IDC_ADD_BEFORE,204,74,50,14
+    PUSHBUTTON      "Vložit &za",IDC_ADD_AFTER,204,90,50,14
+    PUSHBUTTON      "&Smazat",IDC_REMOVE,204,106,50,14
+END
+
+IDD_TEAM_BASIC DIALOG DISCARDABLE  0, 0, 252, 121
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Obecné"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Název:",-1,8,8,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,52,8,192,12,ES_AUTOHSCROLL
+END
+
+IDD_SETUP_SOUND DIALOG DISCARDABLE  0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Zvukový výstup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Zvolte zvukový výstup:",IDC_STATIC1,8,8,112,8
+    COMBOBOX        IDC_SELECT_SOUND_CARD,8,20,120,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Test",IDC_TEST_SOUND,8,38,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DRV_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_RS_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RS_ADVANCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RS_TIMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_RE_START_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_SETUP_TRACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SETUP_STM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_FIRST_LANES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_GROUPS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_RS_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_TEAM_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_SETUP_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RS_BASIC DLGINIT
+BEGIN
+    IDC_CHANGING, 0x403, 9, 0
+0x3331, 0x3735, 0x3638, 0x3234, "\000" 
+    IDC_CHANGING, 0x403, 7, 0
+0x3331, 0x3635, 0x3234, "\000" 
+    IDC_CHANGING, 0x403, 5, 0
+0x3331, 0x3234, "\000" 
+    0
+END
+
+IDD_SETUP_STM DLGINIT
+BEGIN
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0031, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0032, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0033, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0034, 
+    0
+END
+
+IDD_SETUP_TRACK DLGINIT
+BEGIN
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0034, 
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0036, 
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0038, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SpyTech Race Manager"
+    IDS_RACE_TYPE_COMBO     "Jednotlivci\nTýmy"
+    IDS_DIVIDING_COMBO      "Od nejhorších k nejlepším\nRovnomìrnì\nNáhodnì"
+    IDS_POINT_SCHEMA_COMBO  "Vlastní\n15, 12, 10, 8, 6, 5, 4, 3, 2, 1\n25, 20, 16, 13, 11, 10, 9, 8, ..., 3, 2, 1\n16, 15, 14, ..., 3, 2, 1"
+    IDS_DIVISION_UNITS_COMPO "Jednotky\nPoloviny"
+    IDS_SELECT_FOLDER       "Vyberte složku"
+    IDS_SELECT_FOLDER_FOR_DRIVER 
+                            "Vyberte složku, ve které chcete vytvoøit nového závodníka."
+    IDS_SELECT_FOLDER_FOR_FOLDER 
+                            "Vyberte složku, ve které chcete vytvoøit novou podsložku."
+    IDS_STM_TEST_ERROR      "Chyba pøi komunikaci se zaøízením STM/2008!\n\nOvìøte v Nástroje > Nastavení, zda máte nastavenu správnou zásuvku."
+    IDS_STM_TEST_OK         "Zaøízení STM/2008 je správnì pøipojeno."
+    IDS_ERROR_CREATING_DATA_FOLDER 
+                            "Chyba pøi vytváøení složky pro data programu! Program bude ukonèen."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Pøipraven."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_INDEX           "Zobrazí obsah nápovìdy programu."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Zobrazí/schová stavový øádek."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DATA_LOAD_ERROR     "Chyba pøi ètení databáze! Bude vytvoøena nová prázná databáze."
+    IDS_DATA_SAVE_ERROR     "Chyba pøi ukládání databáze!"
+    IDS_DRV_IS_ALREADY_IN_RACE "Závodník ""%s"" byl již k závodu pøidán."
+    IDS_AFXOLEINIT_FAILED   "Chyba pøi inicializaci OLE. Program nemùže pokraèovat. "
+    IDS_REALLY_AUTODIVIDE   "Opravdu chcete automaticky rozdìlit závodníky do skupin podle nastavení v závodním systému?"
+    IDS_GROUPS_NOT_DONE     "Není definována žádná skupina, alespoò jedna skupina je prázná nebo alespoò jeden závodník není pøiøazen do žádné skupiny.\nOtevøete položku ""Skupiny"" a upravte skupiny."
+    IDS_MORE_ENTITIES_THAN_ALLOWED 
+                            "Do další èásti závodu postoupilo více závodníkù než je uvedeno v závodním systému, protože\n""poèet skupin""  * ""poèet postupujích ze skupiny""  > ""celkem postupujících"""
+    IDS_REALLY_NEXT_PART    "Opravdu chcete zahájit mìøení aktuální èásti závodu?"
+    IDS_LESS_ENTITIES_THAN_WANTED 
+                            "Další èásti závodu se zùèastní ménì závodníkù, než je uvedeno v závodním systému, protože v této èásti závodu nebylo dostatek závodníkù pro postup."
+    IDS_ERROR_DRIVERS_EXPORT "Chyba pøi exportu závodníkù!"
+    IDS_ERROR_DRIVERS_IMPORT "Chyba pøi importu závodníkù!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW_DRIVER           "\nNový závodník...\tF4"
+    ID_NEW_TS               "Vytvoøí nový závodní systém"
+    ID_RACE_OPEN            "\nOtevøít závod\tCtrl+O"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW_FOLDER           "\nNová složka...\tF3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETUP                "\nNastavení"
+    ID_RACE_SAVE            "\nUložit závod\tCtrl+S"
+    ID_RACE_START           "\nUkonèit tvorbu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ADD_TO_RACE          "\nPøidat do závodu...\tF7"
+    ID_NEW_TEAM             "Vytvoøí nový tým."
+    ID_RACE_SAVE_AS         "\nUložit závod jako..."
+    ID_RACE_NEW             "\nNový závod...\tCtrl+N"
+    ID_RACE_CLOSE           "\nZavøít závod"
+    ID_NEW_GLOBAL_TEAM      "\nNový tým...\tF8"
+    ID_NEW_GLOBAL_RS        "\nNový závodní systém...\tF5"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RACE_NEXT_PART       "\nZahájit/pokraèovat v mìøení èásti"
+    ID_EXERCISE             "\nTrénink..."
+    ID_EXPORT_DRIVERS       "\nExport závodníkù..."
+    ID_IMPORT_DRIVERS       "\nImport závodníkù..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REWRITE_DRIVER      "Importovaný závodník ""%s %s (%s)"" již ve složce ""%s"" existuje.\nChcete závodníka v databázi pøepsat importovaným závodníkem?"
+    IDS_STANDARD            "Standardní"
+    IDS_DATABASE            "Databáze"
+    IDS_RACE_SYSTEMS        "Závodní systémy"
+    IDS_DRIVERS             "Závodníci"
+    IDS_RACE_CHANGED_SAVE   "Závod byl zmìnìn. Chcete ho uložit?"
+    IDS_TWO_HAS_SAME_LANE   "Alespoò dva závodníci/týmy mají pøiøazenou stejnou dráhu."
+    IDS_PAUSE_CAN_ONE_DRIVER "Pauzovat mùže pouze 1 závodník."
+    IDS_PAUSE_CAN_X_DRIVERS "Pauzovat mohou pouze %d závodníci."
+    IDS_DRIVER_CANT_BE_ADDED_NO_TEAMS 
+                            "Závodníka nelze pøidat do závodu, protože v závodu nejsou vytvoøeny žádné týmy."
+    IDS_DUPLICATE_DRIVER    "V stejné složce, ve které se nachází tento závodník, již existuje jiný závodník se stejným jménem a pøezdívkou!\nZvolte jiné jméno nebo pøezdívku."
+    IDS_LETTER_GROUP        "Skupina %c"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MIN_LESS_THAN_MAX   "Minimální poèet závodníkù musí být menší než maximální poèet."
+    IDS_TEAM_WITH_MORE_DRVS_EXISTS 
+                            "V závodu již existuje tým s více závodníky než je uvedeno. Zvolte prosím jiný maximální poèet."
+    IDS_TEAM_EXISTS         "Tým s tímto jménem již existuje. Zvolte prosím jiný název."
+    IDS_MORE_ADVANCES_THAN_COUNT 
+                            "Alespoò z jedné èásti závodu postupuje více závodníkù než se jí uèástní."
+    IDS_RS_EXISTS           "Závodní systém se zadaným názvem již existuje! Zvolte prosím jiný název."
+    IDS_BAD_CHANGING_FORMAT "Špatný formát øetìzce urèujícího støídání drah."
+    IDS_NUM_RIDES           "Poèet jízd:"
+    IDS_NUM_ATTEMPTS        "Poèet pokusù:"
+    IDS_TWO_LANES_SAME_SENSOR "Alespoò dvì dráhy používají stejný senzor."
+    IDS_DRV_PROPERTIES      "Vlastnosti závodníka"
+    IDS_DELETE_DRV          "Opravdu chcete smazat tohoto závodníka?"
+    IDS_EMPTY_NAME          "Prázdný název položky není možný."
+    IDS_FOLDER_EXISTS       "Složka s daným jménem již existuje.\nZvolte prosím jiné jméno."
+    IDS_NEW_FOLDER          "Nová složka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RACE_SLASH          "Závod – "
+    IDS_RACE_PROPERTIES     "Vlastnosti závodu"
+    IDS_TEAM_FULL           "Tým je již plný. Nìkterý závodníci nebyly pøidáni."
+    IDS_BUILDING            "Tvorba"
+    IDS_QUAL                "Kvalifikace"
+    IDS_CONSI               "Rozjížïky"
+    IDS_QUATER              "Ètvrtfinále"
+    IDS_SEMI                "Semifinále"
+    IDS_FINAL               "Finále"
+    IDS_FINISHED            "Ukonèen"
+    IDS_BAD_NUM_OF_LANES    "Závod nemùže zaèít, protože poèet drah na autodráze je jiný než vyžaduje závod."
+    IDS_NO_RS               "Závod nemùže zaèít, protože nemá pøiøazen závodní systém."
+    IDS_BAD_TEAM_MEMBER_COUNT 
+                            "Alespoò jeden tým má ménì èlenù než je minimum."
+    IDS_NO_DRIVERS          "Závod nemùže zaèit, protože neobsahuje žádné závodníky."
+    IDS_REMOVE_DRV_FROM_RACE 
+                            "Opravdu chcete tohoto závodníka odebrat ze závodu?"
+    IDS_DRV_IN_RACE_PROPERTIES "Vlastnosti závodníka v závodu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNKNOWN_TRACK       "Neznámá dráha"
+    IDS_UNKNOWN             "Neznámý"
+    IDS_SETUP               "Nastavení"
+    IDS_TEAM_PROPERTIES     "Vlastnosti závodního týmu"
+    IDS_DELETE_RS           "Opravdu chcete smazat tento závodní systém?"
+    IDS_RS_PROPERTIES       "Vlastnosti závodní systému"
+    IDS_SOME_CHANGES_AFTER_RESET 
+                            "Provedené úpravy týkající se již odjetých èástí závodu se projeví až po resetu závodu."
+    IDS_RACE                "Závod"
+    IDS_DUPLICATE_NICKNAME  "V závodu již existuje závodník se stejným zpùsobem zobrazení jména."
+    IDS_GROUPS              "Skupiny"
+    IDS_SELECT_RS           "Zvolte závodní systém"
+    IDS_SELECT_RS_DETAIL    "Zvolte závodní systém, který bude nový závod používat. "
+    IDS_SELECT_TEAM         "Zvolte tým"
+    IDS_SELECT_TEAM_DETAIL  "Zvolte tým, do kterého chcete závodníka pøidat:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REALLY_FINISH_PART  "Opravud chcete ukonèit aktuální èást závodu a pøejít se do další èásti?"
+    IDS_RACE_DONE           "Poslední èást závodu byla ukonèena. Závod je ukonèen."
+    IDS_BAD_CHANGING        "Nastavení støídání drah neodpovídá poètu drah autodráhy.\nUpravte støídání drah ve vlastnostech závodního systému."
+    IDS_RESET_RACE          "Opravdu chcete smazat všechny výsledky a nastavení a vrátit se do režimu ""Tvorba závodu""."
+    IDS_BRIEF_HELP          "Prùvodce programem"
+    IDS_HELP                "Nápovìda"
+    IDS_STM_UNKNOWN_STATE   "STM/2008: Nelze zjistit stav"
+    IDS_STM_NOT_CONNECTED   "STM/2008: Není pøipojeno"
+    IDS_STM_TRACK_IS_OFF    "STM/2008: Dráha je vypnutá"
+    IDS_STM_TRACK_IS_ON     "STM/2008: Dráha je pod napìtím"
+    IDS_POINTS              "Body"
+    IDS_RANK                "Umístìní"
+    IDS_REMOVE_TEAM_FROM_RACE "Opravdu chcete tento tým odebrat ze závodu?"
+    IDS_DOCUMENTS           "Dokumenty"
+    IDS_EDITING_RACE_PART_RESULTS "Úprava výsledkù èásti závodu"
+    IDS_CONTINUE_MEASURE_RACE_PART "Pokraèovat v mìøení èásti závodu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_GROUPS          "\nSkupiny"
+    ID_EDIT_RIDES           "\nÚprava výsledkù èásti"
+    ID_RACE_FINISH_PART     "\nUkonèit aktuální èást"
+    ID_RACE_RETURN          "\nNávrat..."
+    ID_BRIEF_HELP           "\nPrùvodce programem"
+    IDAE_EXPORT_TO_HTML     "Provede export dokumentu do souboru HTML"
+    ID_SOUND_TEST           "\nTest zvukového výstupu"
+    ID_EXPORT_DRV_FOLDER    "\nExport..."
+    ID_EB_TEST              "\nTest externího panelu"
+    ID_GLOBAL_NEW_DRIVER    "\nNový závodník..."
+    ID_GLOBAL_NEW_FOLDER    "\nNová složka..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_START_MEASURE_RACE_PART "Zahájit mìøení èásti závodu"
+    IDS_SOUND_TEST          "Pokud po kliknutí na OK uslyšíte zvuk, byl zvukový výstup korektnì nastaven."
+    IDS_NEW_DRV             "Nový závodník"
+    IDS_NEW_RACE            "Nový závod"
+    IDS_NEW_DRV_IN_RACE     "Nový závodník v závodu"
+    IDS_NEW_TEAM            "Nový tým"
+    IDS_NEW_RS              "Nový závodní systém"
+    IDS_EXIT_EVEN_WITH_DB_LOSS 
+                            "Databáze nebyla uložena. Chcete aplikaci pøesto ukonèit a ztratit obsah databáze?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STM_TEST             "\nTest zaøízení STM/2008"
+END
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_WSF_TREE_VIEW,       VIRTKEY, ALT, NOINVERT
+    "0",            ID_WSF_TREE_VIEW,       VIRTKEY, CONTROL, ALT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_RACE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_RACE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_RACE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F2,          ID_WSF_RENAME,          VIRTKEY, NOINVERT
+    VK_F3,          ID_NEW_FOLDER,          VIRTKEY, NOINVERT
+    VK_F4,          ID_NEW_DRIVER,          VIRTKEY, NOINVERT
+    VK_F4,          ID_WSF_WINDOW_CLOSE,    VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_NEW_GLOBAL_RS,       VIRTKEY, NOINVERT
+    VK_F6,          ID_WSF_NEXT_PANE,       VIRTKEY, NOINVERT
+    VK_F6,          ID_WSF_PREVIOUS_PANE,   VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_ADD_TO_RACE,         VIRTKEY, NOINVERT
+    VK_F8,          ID_NEW_GLOBAL_TEAM,     VIRTKEY, NOINVERT
+    VK_NEXT,        ID_WSF_NEXT_TAB_WINDOW, VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_WSF_PREVIOUS_TAB_WINDOW, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_WSF_PROPERTIES,      VIRTKEY, ALT, NOINVERT
+    VK_TAB,         ID_WSF_NEXT_VIEW,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,0
+ PRODUCTVERSION 1,6,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "http://www.spytech.cz\0"
+            VALUE "CompanyName", "SpyTech\0"
+            VALUE "FileDescription", "SpyTech Race Manager DLL\0"
+            VALUE "FileVersion", "1, 6, 0, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000-2004 SpyTech\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SpyTech Race Manager\0"
+            VALUE "ProductVersion", "1, 6, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Data Managment.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

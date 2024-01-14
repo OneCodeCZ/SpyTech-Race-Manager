@@ -1,0 +1,25 @@
+///////////////////////////////////////////////////////////////////////////////
+//  ____________
+// |   |    _   |
+// | S | __|_|__|  ORM TEST SUITE
+// | P |  /  |  |  ~~~~~~~~~~~~~~
+// | Y | /-  |  |  Copyright (C)2004 SpyTech
+// | T |  |  \  |
+// | E |  | _/  |  Author: Radek Tetik
+// | C |  |__|  |  http://www.spytech.cz 
+// | H |  _||   |
+// |___|________|  Last changed: 2004
+//
+///////////////////////////////////////////////////////////////////////////////
+
+#pragma once
+
+/*****************************************************************************/
+class CTestCreateObjects : public CWsfTest
+{
+public:
+	CTestCreateObjects(IWsfTestMsgOutput* o);
+	virtual ~CTestCreateObjects();
+
+   virtual void Run() throw (CException*);
+};

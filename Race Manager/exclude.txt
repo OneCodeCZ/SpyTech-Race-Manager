@@ -1,0 +1,6 @@
+.ilk
+comm_log.txt
+\logs\
+
+
+

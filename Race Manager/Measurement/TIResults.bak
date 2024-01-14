@@ -1,0 +1,79 @@
+/******************
+*                 *  TIResults.h
+*   __|           *  __________________________________________________________
+*  / 9 \          *  
+*  \__, \         *  Coded by Adam J. Sporka / SpyTech
+*      \ \___     *  18-AUG-2000
+*       \    '\   *  __________________________________________________________
+*      / ____  \  *  
+*    ,^ /   ,^ /  *  A part of Race Manager source code.
+*     ^^     ^^   *  This file is property of SpyTech Company and in no way
+*                 *  may be used by anyone else.
+*******************                                                          */
+
+#if !defined(AFX_TIRESULTS_H__68ADC721_7511_11D4_B035_0000B49E3BD7__INCLUDED_)
+#define AFX_TIRESULTS_H__68ADC721_7511_11D4_B035_0000B49E3BD7__INCLUDED_
+
+#if _MSC_VER > 1000
+#pragma once
+#endif // _MSC_VER > 1000
+
+/*******************************************************************************
+*
+*  CTIResults
+*
+*******************************************************************************/
+
+#define RESULTS_TYPE_INITIAL_LIST       1
+#define RESULTS_TYPE_RACE_PART_RESULTS  2
+#define RESULTS_TYPE_GROUP_CFG          3
+#define RESULTS_TYPE_GROUP              4
+#define RESULTS_TYPE_FINAL_RESULTS      5
+
+class CTIResults : public CWsfTreeItem
+{
+	int m_nType;
+	int m_nRacePart;   // (Radek's codework)
+	CString m_sGroupName; // only if RESULTS_TYPE_GROUP
+public:
+
+	CWslArray<int> m_nArrGroupBorders;
+	CWslArray<int> m_nArrOrder;
+	virtual CString GetTitle() const;
+
+	CTIResults();
+	CTIResults(int nRacePart);
+	virtual ~CTIResults();
+
+	virtual bool OnOpen(CDocument **pDoc, CView **pView);
+	void OnUpdateOpen(CCmdUI* pCmdUI);
+
+	// Gather the data from m_pArrSortedEntities
+	void GatherData();
+	// Gather the data from m_aPartEntities
+	void GatherDataPartEntities();
+	// Gather data about current groups configuration
+	void GatherDataGroups(CTIMeasuredRace *pRace);
+	void GatherDataGroupRide(CTIMeasuredRace *pRace);
+	void GatherDataFinalResults(CTIMeasuredRace *pRace);
+
+	virtual void Serialize(CArchive &ar);
+
+	void WriteStandardHeader(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateQualificationReport(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateRacePartReport(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateInitialListReport(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateGroupList(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateGroupReport(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+	void CreateFinalResultList(CArticleLog *pDoc, CTIMeasuredRace *pRace);
+
+	void OnFilePrint();
+	void OnUpdateFilePrint(CCmdUI *pCmdUI);
+
+	virtual int GetDefaultCommand() { return ID_WSF_OPEN; };
+
+	WSL_DECLARE_SERIAL_DLL(MEASURE_API, CTIResults)
+	DECLARE_MESSAGE_MAP()
+};
+
+#endif // !defined(AFX_TIRESULTS_H__68ADC721_7511_11D4_B035_0000B49E3BD7__INCLUDED_)

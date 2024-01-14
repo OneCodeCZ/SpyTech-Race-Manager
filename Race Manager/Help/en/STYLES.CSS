@@ -1,0 +1,30 @@
+body {
+  font-family: Verdana;
+  font-size: 10pt;
+  background-color: #ffffff;
+}
+
+a {
+  font-size: 10pt; 
+  color: #0000ff;
+}
+
+td {
+  font-size: 10pt; 
+}
+
+a:hover {
+  color: #ff0000;
+}
+
+i {
+  color: #f00000;
+}
+
+h1 {
+  color: #000000;
+}
+
+h2 {
+  color: #000000;
+}

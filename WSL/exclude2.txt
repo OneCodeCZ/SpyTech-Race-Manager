@@ -1,0 +1,14 @@
+\debug\
+\release\
+.ilk
+.exe
+.mod
+.s3m
+.xm
+.dll
+.plg
+.exp
+.lib
+.obj
+.pch
+.idb

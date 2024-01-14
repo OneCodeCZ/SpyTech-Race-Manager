@@ -1,0 +1,95 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><a href="javascript:history.back();">Back</a> | <a href="index.html">Content</a></p>
+<h2>Qualification measurement</h2>
+
+<table align=right><tr>
+  <td width=16></td>
+  <td><img src="img/qual.png"></td>
+</tr></table>
+
+<p>
+  If the qualification is enabled in the race system used, the race begins with
+  the qualification part. The current status is indicated in the tree view in the
+  name of the main race folder. Now, the folder item name reads <i>Race -- Qualification</i>.
+  Run the measurement by issuing <i>Begin race part measurement</i> command.
+  You will be prompted to confirm the command.
+<p>
+  The picture on the right edge of this page shows the flow chart of the
+  qualification measurement process. Each box represents a status of the system
+  (e.g. pause, segment run, or an information screen kept on the screen)
+  and each arrow represents an even to be recognized or an action that is to be
+  taken in order to get into the next status.
+<p>
+  The meaning of the icons within the picture is as follows:
+</p>
+
+<table>
+  <tr><td width=64><img src="img/icon_red.png"></td><td>The track is unpowered in the status</td></tr>
+  <tr><td><img src="img/icon_green.png"></td><td>The track powered in the status</td></tr>
+  <tr><td><img src="img/icon_p.png"></td><td>SPACE key pressed in such status holds the countdown until pressed again</td></tr>
+  <tr><td><img src="img/icon_semaphore.png"></td><td>A starting semaphore is shown during the transition to the next status</td></tr>
+  <tr><td><img src="img/icon_a.png"></td><td>A letter key pressed in such status advances the countdown several seconds before the end (all racers are already prepared and there is no need to keep the whole pause)</td></tr>
+  <tr><td><img src="img/icon_b.png"> <img src="img/icon_c.png"></td><td>B and C letter keys have special meaning in the status. They will be discussed in the later text.</td></tr>
+</table>
+
+<p>
+  Now for the description of the qualification measurement. After the measurement
+  is started, a race title screen is shown.
+</p>
+<img src="img/screen_qual_begins.gif">
+<p>
+  Press ENTER in order to advance to the next screen, the current results (presented as
+  a list of all racers) is shown.
+</p>
+<img src="img/screen_qual_current_results.gif">
+<p>
+  Press ENTER to advance to the countdown before the first qualification attempt. The
+  time countdown field shows the number of seconds before the attempt starts. The progress
+  bar at the bottom edge of the screen fills with light grey color, as the time elapses.
+  The box in the right bottom edge is the indicator of the power supply to the track.
+  Red means the track is unpowered, green means the track is supplied with the electric
+  power. There is a field <i>Next racers</i> containing the next 10 (or less) racers that
+  are in order to take their qualification attempts. When the countdown elapses, the
+  screen is switched to the main qualification status window.
+</p>
+<img src="img/screen_qual_main.gif">
+<p>
+  The meaning of the data field names are self-explanatory. 
+  If the racer decides to quit the current qualification attempt and to keep
+  his time for the next one, press the <i>B</i> letter key. According to the rules, from his
+  time left, 30 secons are subtracted and the rest can be used by the racer in the
+  next round of qualification attempts, if specified so in the race system. If the
+  racer decides to quit the qualification once and for all, press the <i>C</i> letter key.
+  The racer will not be asked to take his qualification attempt in the next round.
+</p>
+<p>
+  After the qualification attempt is terminated, the screen with the current results
+  is shown again and another pause countdown runs.
+  After all rounds and attempts are done, the qualification closing result screen
+  is shown.
+</p>
+<img src="img/screen_qual_results.gif">
+<p>
+  Press ENTER to quit the measurement environment if the audience in your track hall
+  is done with reading.
+</p>
+<p>
+  <b>Important:</b> After you quit the measurement, you are supposed to perform the
+  transition to the next race part (which is, according to your race system settings,
+  either heats, quarter final, semifinal or final). The transition is done with
+  the <i>End the current part</i> command in the <i>Race</i> menu.
+  After that, the <i>Qualification results</i> sheet is created and ready to
+  be shown and printed out.
+</p>
+<p>
+  You are now ready to perform the measurement of the next race part. 
+</p>
+</body>
+</html>

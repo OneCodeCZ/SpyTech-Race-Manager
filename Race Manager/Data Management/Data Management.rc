@@ -1,0 +1,1193 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "WsfCmdId.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""WsfCmdId.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Data Managment.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Race Commander.ico"
+IDI_RECORD              ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_DRV                 ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_RACE                ICON    DISCARDABLE     "res\\race.ico"
+IDI_GROUP               ICON    DISCARDABLE     "res\\group.ico"
+IDI_STOPS               ICON    DISCARDABLE     "res\\stops.ico"
+IDI_STAR                ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_TRACK               ICON    DISCARDABLE     "res\\course.ico"
+IDI_COLORS              ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_STM                 ICON    DISCARDABLE     "res\\stm.ico"
+IDI_TOOLS               ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_FILETYPE            ICON    DISCARDABLE     "res\\filetype.ico"
+IDI_TEAM_DATA           ICON    DISCARDABLE     "res\\team_dat.ico"
+IDI_DRV_DATA            ICON    DISCARDABLE     "res\\ico00005.ico"
+IDI_START_DATA          ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_RS                  ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_ADVANCES            ICON    DISCARDABLE     "res\\advances.ico"
+IDI_POINTS              ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_SOUND               ICON    DISCARDABLE     "res\\ico00009.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SMALL_ICONS         BITMAP  DISCARDABLE     "res\\small icons.bmp"
+IDB_NORMAL_ICONS        BITMAP  DISCARDABLE     "res\\Normal Icons.bmp"
+IDB_SPYTECH_LOGO        BITMAP  DISCARDABLE     "res\\SpyTech Logo Small.bmp"
+IDB_ARROW               BITMAP  DISCARDABLE     "res\\arrow.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "ID_RACE_NEW",                 ID_RACE_NEW
+            MENUITEM SEPARATOR
+            MENUITEM "ID_NEW_GLOBAL_TEAM",          ID_NEW_GLOBAL_TEAM
+            MENUITEM SEPARATOR
+            MENUITEM "ID_GLOBAL_NEW_DRIVER",        ID_GLOBAL_NEW_DRIVER
+            MENUITEM "ID_NEW_GLOBAL_RS",            ID_NEW_GLOBAL_RS
+            MENUITEM "ID_GLOBAL_NEW_FOLDER",        ID_GLOBAL_NEW_FOLDER
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "ID_RACE_OPEN",                ID_RACE_OPEN
+        MENUITEM "ID_RACE_SAVE",                ID_RACE_SAVE
+        MENUITEM "ID_RACE_SAVE_AS",             ID_RACE_SAVE_AS
+        MENUITEM "ID_RACE_CLOSE",               ID_RACE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_EXPORT_DRIVERS",           ID_EXPORT_DRIVERS
+        MENUITEM "ID_IMPORT_DRIVERS",           ID_IMPORT_DRIVERS
+        MENUITEM SEPARATOR
+        MENUITEM "ID_FILE_PRINT",               ID_FILE_PRINT
+        MENUITEM SEPARATOR
+        MENUITEM "ID_FILE_MRU_FILE1",           ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "ID_APP_EXIT",                 ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "ID_EDIT_CUT",                 ID_EDIT_CUT
+        MENUITEM "ID_EDIT_COPY",                ID_EDIT_COPY
+        MENUITEM "ID_EDIT_PASTE",               ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_WSF_RENAME",               ID_WSF_RENAME
+        MENUITEM "ID_WSF_DELETE",               ID_WSF_DELETE
+        MENUITEM "ID_EDIT_SELECT_ALL",          ID_EDIT_SELECT_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "ID_WSF_PROPERTIES",           ID_WSF_PROPERTIES
+    END
+    POPUP "&Race"
+    BEGIN
+        MENUITEM "ID_RACE_START",               ID_RACE_START
+        MENUITEM "ID_ADD_TO_RACE",              ID_ADD_TO_RACE
+        MENUITEM "ID_RACE_RETURN",              ID_RACE_RETURN
+        MENUITEM SEPARATOR
+        MENUITEM "ID_RACE_NEXT_PART",           ID_RACE_NEXT_PART
+        MENUITEM "ID_EDIT_RIDES",               ID_EDIT_RIDES
+        MENUITEM "ID_RACE_FINISH_PART",         ID_RACE_FINISH_PART
+        MENUITEM SEPARATOR
+        MENUITEM "ID_EDIT_GROUPS",              ID_EDIT_GROUPS
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "ID_EXERCISE",                 ID_EXERCISE
+        MENUITEM SEPARATOR
+        MENUITEM "ID_STM_TEST",                 ID_STM_TEST
+        MENUITEM "ID_SOUND_TEST",               ID_SOUND_TEST
+        MENUITEM "ID_EB_TEST",                  ID_EB_TEST
+        MENUITEM SEPARATOR
+        MENUITEM "ID_SETUP",                    ID_SETUP
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "ID_HELP",                     ID_HELP
+        MENUITEM "ID_BRIEF_HELP",               ID_BRIEF_HELP
+        MENUITEM SEPARATOR
+        MENUITEM "ID_APP_ABOUT",                ID_APP_ABOUT
+    END
+END
+
+IDR_CONTEXT_MENUS MENU DISCARDABLE 
+BEGIN
+    POPUP "TIDrvFolder"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+        MENUITEM "&Delete...\tDel",             ID_WSF_DELETE
+        MENUITEM "&Rename...\tF2",         ID_WSF_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&New Folder...\tF3",         ID_NEW_FOLDER
+        MENUITEM "New &Racer...\tF4",       ID_NEW_DRIVER
+        MENUITEM SEPARATOR
+        MENUITEM "Export...",                   ID_EXPORT_DRV_FOLDER
+    END
+    POPUP "TIDriver+TIRS"
+    BEGIN
+        MENUITEM "ID_WSF_DELETE",               ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Add To Race...\tF7",              ID_ADD_TO_RACE
+        MENUITEM "ID_WSF_PROPERTIES",           ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceManager"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Settings\tAlt+Enter",       ID_WSF_PROPERTIES
+    END
+    MENUITEM "Dummy",                       65535
+    POPUP "TIRSFolder"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&New Race System...\tF5", ID_NEW_RS
+    END
+    POPUP "TIRace"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+        MENUITEM "&New Team...\tF6",            ID_NEW_TEAM
+        MENUITEM SEPARATOR
+        MENUITEM "&Finish Race Preparing",             ID_RACE_START
+        MENUITEM "&Return...",                  ID_RACE_RETURN
+        MENUITEM SEPARATOR
+        MENUITEM "&Start/Continue Meassuring Race Part", ID_RACE_NEXT_PART
+        MENUITEM "&Edit Race Part Results",      ID_EDIT_RIDES
+        MENUITEM "&Finish Current Race Part",      ID_RACE_FINISH_PART
+        MENUITEM SEPARATOR
+        MENUITEM "&Groups",                    ID_EDIT_GROUPS
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceTeam"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+        MENUITEM "&Delete...\tDel",             ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "TIRaceDrv"
+    BEGIN
+        MENUITEM "&Delete...\tDel",             ID_WSF_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "&Properties\tAlt+Enter",      ID_WSF_PROPERTIES
+    END
+    POPUP "Database"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "TIGroups"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "TIResultsFolder"
+    BEGIN
+        MENUITEM "&Open\tEnter",             ID_WSF_OPEN
+    END
+    POPUP "Helper"
+    BEGIN
+        MENUITEM "ID_EB_TEST",                  ID_EB_TEST
+        MENUITEM "ID_GLOBAL_NEW_DRIVER",        ID_GLOBAL_NEW_DRIVER
+        MENUITEM "ID_GLOBAL_NEW_FOLDER",        ID_GLOBAL_NEW_FOLDER
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 220, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,8,8,20,20
+    DEFPUSHBUTTON   "OK",IDOK,84,148,50,14,WS_GROUP
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP,44,48,33,33
+    LTEXT           "E-mail: info@spytech.cz",IDC_STATIC,96,48,92,8
+    LTEXT           "http://www.spytech.cz",IDC_STATIC,96,60,74,8
+    LTEXT           "RACE MANAGER 1.xx",IDC_TITLE,44,8,148,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,39,39,168,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,40,92,167,1
+    LTEXT           "Pogramming: Ing. Radek Tetík, Ing. Adam J. Sporka",
+                    IDC_STATIC,44,100,160,8
+    LTEXT           "Functional Specification: Ing. Josef Korec",IDC_STATIC,44,
+                    112,160,8
+    LTEXT           "STM/2008 Hardware: Ing. Jakub Ahmadyar",IDC_STATIC,44,
+                    124,160,8
+    LTEXT           "Hot Line:",IDC_STATIC,96,72,28,8
+    LTEXT           "Copyright (C) 2000–2004 SpyTech",IDC_STATIC,44,20,109,8
+    LTEXT           "+420-777-347-331",IDC_STATIC,124,72,63,8
+END
+
+IDD_DRV_BASIC DIALOG DISCARDABLE  0, 0, 216, 130
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,68,6,138,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SURNAME,68,20,138,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NICKNAME,68,34,138,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CLUB,68,60,140,92,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_LICENCE_NUMBER,68,74,51,12,ES_AUTOHSCROLL
+    CONTROL         "&Member Of Assoc.",IDC_MEMBER_OF_UNION,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,68,94,92,10
+    LTEXT           "Name:",IDC_STATIC,8,6,24,12,SS_CENTERIMAGE
+    LTEXT           "&Surname:",IDC_STATIC,8,20,33,12,SS_CENTERIMAGE
+    LTEXT           "&Display As:",IDC_STATIC,8,34,56,12,SS_CENTERIMAGE
+    LTEXT           "&Club/Country:",IDC_STATIC,8,60,52,14,SS_CENTERIMAGE
+    LTEXT           "&Licence Nr.:",IDC_STATIC,8,74,52,12,SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,53,204,1
+END
+
+IDD_RS_BASIC DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_NAME,92,8,128,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_DISTRIBUTION_TYPE,92,22,128,78,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CHANGING,92,36,56,100,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Qualification",IDC_PART_QUAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,72,51,10
+    CONTROL         "Heats",IDC_PART_CONSI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,20,84,48,10
+    CONTROL         "Quarterfinal",IDC_PART_QUATER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,72,47,10
+    CONTROL         "Semifinal",IDC_PART_SEMI,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,84,48,10
+    CONTROL         "Final",IDC_PART_FINAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,168,72,35,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,62,240,1
+    LTEXT           "&Name:",IDC_STATIC,8,8,32,12,SS_CENTERIMAGE
+    LTEXT           "Division Into Groups:",IDC_STATIC,8,22,80,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Lane Changing:",IDC_STATIC,8,36,60,12,SS_CENTERIMAGE
+    LTEXT           "Race Parts",IDC_STATIC1,8,58,56,8
+    LTEXT           "Evaluation Method:",IDC_STATIC,20,118,63,8
+    CONTROL         "Lap Count",IDC_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,92,118,52,10
+    CONTROL         "Best Time",IDC_TYPE2,"Button",BS_AUTORADIOBUTTON,156,
+                    118,60,10
+    LTEXT           "Nr. of Attempts:",IDC_TEXT,20,130,47,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_DATA,92,130,33,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,108,239,1
+    LTEXT           "Qualification",IDC_STATIC2,8,104,48,8
+END
+
+IDD_RS_ADVANCES DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Advances"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "To Quarterfinal:",IDC_STATIC,16,19,52,14,SS_CENTERIMAGE
+    LTEXT           "To Semifinal:",IDC_STATIC,16,35,52,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_QUAL_QUATER,76,19,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUAL_SEMI,76,35,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUAL_FINAL,76,51,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "To Final:",IDC_STATIC,16,51,40,14,SS_CENTERIMAGE
+    LTEXT           "Total:",IDC_STATIC,120,19,36,14,SS_CENTERIMAGE
+    LTEXT           "From Each Group:",IDC_STATIC,120,35,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CONSI_BEST,180,19,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_CONSI_GROUP,180,35,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Total:",IDC_STATIC,16,87,36,14,SS_CENTERIMAGE
+    LTEXT           "From Each Group:",IDC_STATIC,16,103,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_QUATER_BEST,76,87,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_QUATER_GROUP,76,103,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Total:",IDC_STATIC,120,87,36,14,SS_CENTERIMAGE
+    LTEXT           "From Each Group:",IDC_STATIC,120,103,55,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_SEMI_BEST,180,87,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_SEMI_GROUP,180,103,21,14,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "From Qualification:",IDC_STATIC,8,8,96,63
+    GROUPBOX        "From Heats:",IDC_STATIC,113,8,96,63
+    GROUPBOX        "From Quarterfinal:",IDC_STATIC,8,77,96,46
+    GROUPBOX        "From Semifinal:",IDC_STATIC,113,77,96,46
+END
+
+IDD_RS_TIMES DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Timing"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CTEXT           "WarmUp",IDC_STATIC,71,8,33,8
+    CTEXT           "Ride",IDC_STATIC,123,8,33,8
+    CTEXT           "Pauza",IDC_STATIC,171,8,33,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,57,20,157,1
+    RTEXT           "Qualification",IDC_STATIC,8,28,42,14,SS_CENTERIMAGE
+    RTEXT           "Heats",IDC_STATIC,8,44,42,14,SS_CENTERIMAGE
+    RTEXT           "Quarterfinal",IDC_STATIC,8,60,42,14,SS_CENTERIMAGE
+    RTEXT           "Semifinal",IDC_STATIC,8,76,42,14,SS_CENTERIMAGE
+    RTEXT           "Final",IDC_STATIC,8,92,42,14,SS_CENTERIMAGE
+    CONTROL         "DateTimePicker1",IDC_QUAL_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,28,45,12
+    CONTROL         "DateTimePicker1",IDC_QUAL_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,28,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,44,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,44,45,12
+    CONTROL         "DateTimePicker1",IDC_CONSI_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,44,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,60,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,60,45,12
+    CONTROL         "DateTimePicker1",IDC_QUATER_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,60,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,76,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,76,45,12
+    CONTROL         "DateTimePicker1",IDC_SEMI_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,76,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_1,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,64,92,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_2,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,116,92,45,12
+    CONTROL         "DateTimePicker1",IDC_FINAL_3,"SysDateTimePick32",
+                    DTS_UPDOWN | WS_TABSTOP | 0x8,168,92,45,12
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,57,20,1,87
+END
+
+IDD_RACE DIALOGEX 0, 0, 240, 205
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Race"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,12,223,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,14,114,217,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,174,215,1
+    EDITTEXT        IDC_NUMBER,76,20,59,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_NAME,76,34,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ORGANIZER,76,48,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATE,76,62,60,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLACE,76,76,151,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_JUDGE,76,90,151,12,ES_AUTOHSCROLL
+    LTEXT           "Race info",IDC_STATIC1,8,8,72,8
+    LTEXT           "Race Number:",IDC_STATIC,16,20,53,12,SS_CENTERIMAGE
+    LTEXT           "Race Name:",IDC_STATIC,16,34,53,12,SS_CENTERIMAGE
+    LTEXT           "Organizer:",IDC_STATIC,16,48,53,12,SS_CENTERIMAGE
+    LTEXT           "Date:",IDC_STATIC,16,62,53,12,SS_CENTERIMAGE
+    LTEXT           "Venue:",IDC_STATIC,16,76,53,12,SS_CENTERIMAGE
+    LTEXT           "Main Judge:",IDC_STATIC,16,90,53,12,SS_CENTERIMAGE
+    LTEXT           "Race Type",IDC_STATIC2,8,110,48,8
+    CONTROL         "Race Type:",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_CENTERIMAGE | WS_GROUP,16,122,52,12,WS_EX_ACCEPTFILES
+    COMBOBOX        IDC_RACE_TYPE,76,122,60,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Min. Team Members:",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,16,136,60,
+                    12,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_MIN_MEMBERS,76,136,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Max. Team Members:",IDC_STATIC,"Static",
+                    SS_LEFTNOWORDWRAP | SS_CENTERIMAGE | WS_GROUP,16,150,60,
+                    12,WS_EX_ACCEPTFILES
+    EDITTEXT        IDC_MAX_MEMBERS,76,150,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Miscellaneous",IDC_STATIC3,8,170,32,8
+    LTEXT           "Min. Time per Lap:",IDC_STATIC,16,182,57,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MIN_TIME,76,182,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "[ms]",IDC_STATIC,109,182,14,14,SS_CENTERIMAGE
+    LTEXT           "(DD.MM.YYY)",IDC_STATIC,140,64,46,8
+END
+
+IDD_RE_START_DATA DIALOG DISCARDABLE  0, 0, 216, 122
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Start Data"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_TITLE,68,8,140,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_RANKING,68,22,40,12,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Start Rank:",IDC_STATIC,8,22,56,12,SS_CENTERIMAGE
+    LTEXT           "Display As:",IDC_STATIC,8,8,56,12,SS_CENTERIMAGE
+    LTEXT           "Display As:",IDC_STATIC,8,8,56,12,SS_CENTERIMAGE
+END
+
+IDD_SETUP_TRACK DIALOG DISCARDABLE  0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Track"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,11,240,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,104,240,1
+    EDITTEXT        IDC_OWNER,88,20,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_NAME,88,34,128,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TRACK_LENGTH,88,48,32,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_NUM_LANES,88,62,32,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_DIVISION_TYPE,88,76,60,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE1,56,113,36,308,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE2,56,129,36,296,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE3,56,145,36,348,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE4,56,161,36,268,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE5,148,113,36,308,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE6,148,129,36,376,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE7,148,145,36,416,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_LANE8,148,161,36,384,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWFIXED | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Track Name:",IDC_STATIC,16,34,68,12,SS_CENTERIMAGE
+    LTEXT           "Track Length:",IDC_STATIC,16,48,68,12,SS_CENTERIMAGE
+    LTEXT           "cm",IDC_STATIC,125,51,10,12
+    LTEXT           "Nr. of Lanes:",IDC_STATIC,16,62,56,12,SS_CENTERIMAGE
+    LTEXT           "Lane 1:",IDC_STATIC,16,114,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 2:",IDC_STATIC,16,130,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 3:",IDC_STATIC,16,146,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 4:",IDC_STATIC,16,162,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 5:",IDC_STATIC,108,114,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 6:",IDC_STATIC,108,130,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 7:",IDC_STATIC,108,146,34,12,SS_CENTERIMAGE
+    LTEXT           "Lane 8:",IDC_STATIC,108,162,34,12,SS_CENTERIMAGE
+    LTEXT           "Segment Division:",IDC_STATIC,16,76,67,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Owner:",IDC_STATIC,16,20,36,12,SS_CENTERIMAGE
+    LTEXT           "Track Data:",IDC_STATIC1,8,8,76,8
+    LTEXT           "Lanes Colors:",IDC_STATIC2,8,100,92,8
+END
+
+IDD_SETUP_STM DIALOGEX 0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "STM/2008"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_COM,84,22,50,68,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Enable Lane Mapping",IDC_TRACK_MAPPING_ENABLED,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,60,100,10
+    EDITTEXT        IDC_PHYSICAL_1,48,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_2,64,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_3,80,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_4,96,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_5,120,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_6,136,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_7,152,102,12,12,ES_NUMBER
+    EDITTEXT        IDC_PHYSICAL_8,168,102,12,12,ES_NUMBER
+    PUSHBUTTON      "&Remap",IDC_REMAP,84,164,91,14
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,16,12,232,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,48,236,1
+    LTEXT           "Connection",IDC_STATIC1,8,8,80,8
+    LTEXT           "COM Port:",IDC_STATIC,16,22,64,12,SS_CENTERIMAGE
+    LTEXT           "Lane Mapping:",IDC_STATIC2,8,44,72,8
+    LTEXT           "Track:",IDC_STATIC,16,78,28,12,SS_CENTERIMAGE
+    CTEXT           "1",IDC_STATIC,48,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "2",IDC_STATIC,64,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "1",IDC_STATIC,80,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "1",IDC_STATIC,96,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "2",IDC_STATIC,120,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "3",IDC_STATIC,136,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "4",IDC_STATIC,152,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    CTEXT           "5",IDC_STATIC,168,78,12,12,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Sensor:",IDC_STATIC,16,102,24,12,SS_CENTERIMAGE
+    GROUPBOX        "Automatic Mapping",IDC_STATIC,16,124,228,60
+    LTEXT           "Click in an edit-box belonging to the sensor you want to set up and then click Remap.",
+                    IDC_STATIC,24,140,212,16
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,172,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,140,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,156,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,84,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,100,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,124,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,52,94,5,6
+    CONTROL         190,IDC_STATIC,"Static",SS_BITMAP,68,94,5,6
+END
+
+IDD_FIRST_LANES DIALOG DISCARDABLE  0, 0, 256, 154
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Start Lanes Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "—",IDC_NAME1,8,46,71,12,SS_CENTERIMAGE
+    LTEXT           "—",IDC_NAME2,8,62,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME3,8,78,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME4,8,94,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME5,8,110,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME6,132,46,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME7,132,62,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME8,132,78,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME9,132,94,71,12,SS_CENTERIMAGE | NOT WS_GROUP
+    LTEXT           "—",IDC_NAME10,132,110,71,12,SS_CENTERIMAGE | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_ENTITY1,84,46,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_GROUP | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY2,84,62,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY3,84,78,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY4,84,94,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY5,84,110,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY6,208,46,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY7,208,62,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY8,208,78,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY9,208,94,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_ENTITY10,208,110,40,112,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,75,134,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,131,134,50,14
+    LTEXT           "Assign start lanes to racers.",
+                    IDC_STATIC,6,6,244,32
+END
+
+IDD_GROUPS_VIEW DIALOG DISCARDABLE  0, 0, 299, 204
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Undivided Racers:",IDC_STATIC,8,4,74,8,
+                    SS_CENTERIMAGE
+    LISTBOX         IDC_UNDIVIDED_LIST,8,16,108,180,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Automatic",IDC_AUTO,124,32,50,14
+    PUSHBUTTON      "&Print",IDC_PRINT,124,48,50,14
+    PUSHBUTTON      "&Add -->",IDC_ADD,124,128,50,14
+    PUSHBUTTON      "<-- &Remove",IDC_REMOVE,124,144,50,14
+    PUSHBUTTON      "<-- A&ll",IDC_REMOVE_ALL,124,160,50,14
+    LTEXT           "&Groups:",IDC_GROUPS_TEXT,184,4,32,8,SS_CENTERIMAGE
+    LISTBOX         IDC_GROUPS_LIST,184,16,108,60,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "A&dd",IDC_ADD_GROUP,184,80,50,14
+    PUSHBUTTON      "R&emove",IDC_REMOVE_GROUP,240,80,50,14
+    LTEXT           "Group &Members:",IDC_MEMBERS_TEXT,184,108,55,8
+    LISTBOX         IDC_MEMBERS_LIST,184,120,108,60,LBS_NOINTEGRALHEIGHT | 
+                    LBS_EXTENDEDSEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Up",IDC_UP,184,184,50,14
+    PUSHBUTTON      "D&own",IDC_DOWN,240,184,50,14
+END
+
+IDD_RS_POINTS DIALOG DISCARDABLE  0, 0, 264, 177
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Points"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable Points",IDC_ENABLE_POINTS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,8,6,69,10
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,20,247,1
+    LTEXT           "Point Scheme:",IDC_STATIC,8,26,51,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_POINTS_TYPE,8,39,188,116,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "List2",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_EDITLABELS | 
+                    LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,8,58,188,114
+    PUSHBUTTON      "&Edit",IDC_EDIT,204,58,50,14
+    PUSHBUTTON      "&Insert Before",IDC_ADD_BEFORE,204,74,50,14
+    PUSHBUTTON      "Insert &After",IDC_ADD_AFTER,204,90,50,14
+    PUSHBUTTON      "&Delete",IDC_REMOVE,204,106,50,14
+END
+
+IDD_TEAM_BASIC DIALOG DISCARDABLE  0, 0, 252, 121
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",-1,8,8,32,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME,52,8,192,12,ES_AUTOHSCROLL
+END
+
+IDD_SETUP_SOUND DIALOG DISCARDABLE  0, 0, 260, 194
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Sound Output"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Output Device Selection",IDC_STATIC1,8,8,112,8
+    COMBOBOX        IDC_SELECT_SOUND_CARD,8,20,120,68,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Test",IDC_TEST_SOUND,8,38,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_DRV_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_RS_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RS_ADVANCES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RS_TIMES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_RACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 233
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_RE_START_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_SETUP_TRACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_SETUP_STM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_FIRST_LANES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 147
+    END
+
+    IDD_GROUPS_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 292
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 197
+    END
+
+    IDD_RS_POINTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_TEAM_BASIC, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+
+    IDD_SETUP_SOUND, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_RS_BASIC DLGINIT
+BEGIN
+    IDC_CHANGING, 0x403, 9, 0
+0x3331, 0x3735, 0x3638, 0x3234, "\000" 
+    IDC_CHANGING, 0x403, 7, 0
+0x3331, 0x3635, 0x3234, "\000" 
+    IDC_CHANGING, 0x403, 5, 0
+0x3331, 0x3234, "\000" 
+    0
+END
+
+IDD_SETUP_STM DLGINIT
+BEGIN
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0031, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0032, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0033, 
+    IDC_COM, 0x403, 6, 0
+0x4f43, 0x204d, 0x0034, 
+    0
+END
+
+IDD_SETUP_TRACK DLGINIT
+BEGIN
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0034, 
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0036, 
+    IDC_NUM_LANES, 0x403, 2, 0
+0x0038, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "SpyTech Race Manager"
+    IDS_RACE_TYPE_COMBO     "Individuals\nTeams"
+    IDS_DIVIDING_COMBO      "From the best to the worst\nEvenly\nRandomly"
+    IDS_POINT_SCHEMA_COMBO  "Custom\n15, 12, 10, 8, 6, 5, 4, 3, 2, 1\n25, 20, 16, 13, 11, 10, 9, 8, ..., 3, 2, 1\n16, 15, 14, ..., 3, 2, 1"
+    IDS_DIVISION_UNITS_COMPO "Units\nHalfs"
+    IDS_SELECT_FOLDER       "Select a Folder"
+    IDS_SELECT_FOLDER_FOR_DRIVER 
+                            "Select a folder where to create a new racer."
+    IDS_SELECT_FOLDER_FOR_FOLDER 
+                            "Select a folder where to create a new subfolder."
+    IDS_STM_TEST_ERROR      "Error while communicating with the STM/2008 device!\n\nCheck in Tools > Settings, if you have selected a right COM port."
+    IDS_STM_TEST_OK         "The STM/2008 device is connected properly."
+    IDS_ERROR_CREATING_DATA_FOLDER 
+                            "Error while creating a folder for program's data! The program will terminate."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_IDLEMESSAGE     "Ready."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP_INDEX           "Displayes the help content."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "Shows/hides the status bar."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_DATA_LOAD_ERROR     "Error while reading the database! A new empty will be created."
+    IDS_DATA_SAVE_ERROR     "Error while saving the database!"
+    IDS_DRV_IS_ALREADY_IN_RACE "Racer ""%s"" has already been added to the race."
+    IDS_AFXOLEINIT_FAILED   "Error while initializing OLE. The application can't continue."
+    IDS_REALLY_AUTODIVIDE   "Do you really want to divide racers into groups according the race system settings?"
+    IDS_GROUPS_NOT_DONE     "There is no group defined, at least one group is empty or one racer is not assigned to any group.\nUse Race > Groups command to display the group editor."
+    IDS_MORE_ENTITIES_THAN_ALLOWED 
+                            "More racers advanced to the next race part than it's specified in the race system, because \n""number of groups"" * ""number of advancing racers from a group"" > ""total number of advancing racers""."
+    IDS_REALLY_NEXT_PART    "Do you really want to start the meassuring of the current race parent?"
+    IDS_LESS_ENTITIES_THAN_WANTED 
+                            "Fewer racers, than specified in the race system, will take part in the next race part, because there isn't enough racers in the current race part to advance."
+    IDS_ERROR_DRIVERS_EXPORT "Error while exporting racers!"
+    IDS_ERROR_DRIVERS_IMPORT "Error while importing racers!"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW_DRIVER           "\nNew racer...\tF4"
+    ID_NEW_TS               "Creates a new race system"
+    ID_RACE_OPEN            "\nOpen Race\tCtrl+O"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW_FOLDER           "\nNew Folder...\tF3"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SETUP                "\nSettings"
+    ID_RACE_SAVE            "\nSave Race\tCltr+S"
+    ID_RACE_START           "\nFinish Race Preparing"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ADD_TO_RACE          "\nAdd to Race...\tF7"
+    ID_NEW_TEAM             "New Race Team"
+    ID_RACE_SAVE_AS         "\nSave Race As..."
+    ID_RACE_NEW             "\nNew Race...\tCtrl+N"
+    ID_RACE_CLOSE           "\nClose Race"
+    ID_NEW_GLOBAL_TEAM      "\nNew Team...\tF8"
+    ID_NEW_GLOBAL_RS        "\nNew Race System...\tF5"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RACE_NEXT_PART       "\nStart/Continue Race Part"
+    ID_EXERCISE             "\nPractice..."
+    ID_EXPORT_DRIVERS       "\nExport Racers..."
+    ID_IMPORT_DRIVERS       "\nImport Racers..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REWRITE_DRIVER      "The racer ""%s %s (%s)"" being imported already exists in the folder ""%s"".\nDo you want to replace the racer in the database with the racer being imported?\n"
+    IDS_STANDARD            "Standard"
+    IDS_DATABASE            "Database"
+    IDS_RACE_SYSTEMS        "Race Systems"
+    IDS_DRIVERS             "Racers"
+    IDS_RACE_CHANGED_SAVE   "The race has been modified. Do you want to save it?"
+    IDS_TWO_HAS_SAME_LANE   "At least two racers/teams have the same lane assigned."
+    IDS_PAUSE_CAN_ONE_DRIVER "Only one racer can be pausing."
+    IDS_PAUSE_CAN_X_DRIVERS "Only %d races can be pausing."
+    IDS_DRIVER_CANT_BE_ADDED_NO_TEAMS 
+                            "The racer can't be added to the race, because there are no race teams defined."
+    IDS_DUPLICATE_DRIVER    "There is already a racer in the same folder with the same name, surname and display-as value!\nChoose different name, surname or display-as value!"
+    IDS_LETTER_GROUP        "%c group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_MIN_LESS_THAN_MAX   "The minimal count of racers must be smaller the the maximal count."
+    IDS_TEAM_WITH_MORE_DRVS_EXISTS 
+                            "There is a race team in the race with more members than specified. Please choose other maximal number of team members."
+    IDS_TEAM_EXISTS         "A team with the specified name already exists. Please choose a different name."
+    IDS_MORE_ADVANCES_THAN_COUNT 
+                            "At least in one race part more racers are advancing to the next part than the total number of racers in that part."
+    IDS_RS_EXISTS           "A race system with the specified name already exists. Please choose a different name."
+    IDS_BAD_CHANGING_FORMAT "Bad format of the lane changing string."
+    IDS_NUM_RIDES           "Number of Rides:"
+    IDS_NUM_ATTEMPTS        "Number of Trials:"
+    IDS_TWO_LANES_SAME_SENSOR "At least two lanes are using the same hardware sensor."
+    IDS_DRV_PROPERTIES      "Racer Properties"
+    IDS_DELETE_DRV          "Do you really want to delete this racer?"
+    IDS_EMPTY_NAME          "Empty folder name is not possible."
+    IDS_FOLDER_EXISTS       "A folder with the specified name already exists. Please choose a different name."
+    IDS_NEW_FOLDER          "New Folder"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RACE_SLASH          "Race - "
+    IDS_RACE_PROPERTIES     "Race Properties"
+    IDS_TEAM_FULL           "The race team is full. Some racers haven't been added."
+    IDS_BUILDING            "Preparing"
+    IDS_QUAL                "Qualification"
+    IDS_CONSI               "Heats"
+    IDS_QUATER              "Quarterfinal"
+    IDS_SEMI                "Semifinal"
+    IDS_FINAL               "Final"
+    IDS_FINISHED            "Finished"
+    IDS_BAD_NUM_OF_LANES    "The race cannot start, because it requires a track with different number of lanes that the one installed."
+    IDS_NO_RS               "The race cannot start, because it hasn't assigned a race system."
+    IDS_BAD_TEAM_MEMBER_COUNT 
+                            "At least one team has fewer members than the minimum required."
+    IDS_NO_DRIVERS          "The race cannot start, because there are no racers."
+    IDS_REMOVE_DRV_FROM_RACE 
+                            "Do you really want to remove this racer from the race?"
+    IDS_DRV_IN_RACE_PROPERTIES "Racer in Race Properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_UNKNOWN_TRACK       "Unknown track"
+    IDS_UNKNOWN             "Unknown"
+    IDS_SETUP               "Settings"
+    IDS_TEAM_PROPERTIES     "Race Team Properties"
+    IDS_DELETE_RS           "Do you really want to delete this race system?"
+    IDS_RS_PROPERTIES       "Race System Properties"
+    IDS_SOME_CHANGES_AFTER_RESET 
+                            "Changes regarding the finished race parts will take affect after the race is restarted."
+    IDS_RACE                "Race"
+    IDS_DUPLICATE_NICKNAME  "A racer with the same display name already exists in the race."
+    IDS_GROUPS              "Groups"
+    IDS_SELECT_RS           "Choose a race system"
+    IDS_SELECT_RS_DETAIL    "Choose a race system the new race will be using."
+    IDS_SELECT_TEAM         "Choose a team"
+    IDS_SELECT_TEAM_DETAIL  "Choose a team which you want the racer to be part of:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_REALLY_FINISH_PART  "Do you really want to finish the current race part and move the the next one?"
+    IDS_RACE_DONE           "The last part of the race is finished. The race is finished."
+    IDS_BAD_CHANGING        "The lane changing scheme does not match the number of lanes of the track installed."
+    IDS_RESET_RACE          "Do you really want to delete all results and settings and return the the race preparing phase?"
+    IDS_BRIEF_HELP          "Tutorial"
+    IDS_HELP                "Help"
+    IDS_STM_UNKNOWN_STATE   "STM/2008: State unknown"
+    IDS_STM_NOT_CONNECTED   "STM/2008: Not connected"
+    IDS_STM_TRACK_IS_OFF    "STM/2008: Track is off"
+    IDS_STM_TRACK_IS_ON     "STM/2008: Track is on"
+    IDS_POINTS              "Points"
+    IDS_RANK                "Rank"
+    IDS_REMOVE_TEAM_FROM_RACE "Do you really want to remove this team from the race?"
+    IDS_DOCUMENTS           "Documents"
+    IDS_EDITING_RACE_PART_RESULTS "Editing of the results of the race part"
+    IDS_CONTINUE_MEASURE_RACE_PART "Continue meassuring the race part"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_GROUPS          "\nGroups"
+    ID_EDIT_RIDES           "\nEdit race part results"
+    ID_RACE_FINISH_PART     "\nFinish race part"
+    ID_RACE_RETURN          "\nReturn..."
+    ID_BRIEF_HELP           "\nTutorial"
+    IDAE_EXPORT_TO_HTML     "Exports the document to a HTML file"
+    ID_SOUND_TEST           "\nSound Output Test"
+    ID_EXPORT_DRV_FOLDER    "\nExport..."
+    ID_EB_TEST              "\nExternal Board Test"
+    ID_GLOBAL_NEW_DRIVER    "\nNew Racer..."
+    ID_GLOBAL_NEW_FOLDER    "\nNew Folder..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_START_MEASURE_RACE_PART "\nStart Race Part Meassuring"
+    IDS_SOUND_TEST          "After you click OK, you should hear a sound."
+    IDS_NEW_DRV             "New Racer"
+    IDS_NEW_RACE            "New Race"
+    IDS_NEW_DRV_IN_RACE     "New Racer in Race"
+    IDS_NEW_TEAM            "New Team"
+    IDS_NEW_RS              "New Race System"
+    IDS_EXIT_EVEN_WITH_DB_LOSS 
+                            "The database wasn't saved. Do you still want to exit the application and loose the database content?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_STM_TEST             "\nSTM/2008 Device Test"
+END
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "0",            ID_WSF_TREE_VIEW,       VIRTKEY, ALT, NOINVERT
+    "0",            ID_WSF_TREE_VIEW,       VIRTKEY, CONTROL, ALT, NOINVERT
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_RACE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_RACE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_RACE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F2,          ID_WSF_RENAME,          VIRTKEY, NOINVERT
+    VK_F3,          ID_NEW_FOLDER,          VIRTKEY, NOINVERT
+    VK_F4,          ID_NEW_DRIVER,          VIRTKEY, NOINVERT
+    VK_F4,          ID_WSF_WINDOW_CLOSE,    VIRTKEY, CONTROL, NOINVERT
+    VK_F5,          ID_NEW_GLOBAL_RS,       VIRTKEY, NOINVERT
+    VK_F6,          ID_WSF_NEXT_PANE,       VIRTKEY, NOINVERT
+    VK_F6,          ID_WSF_PREVIOUS_PANE,   VIRTKEY, SHIFT, NOINVERT
+    VK_F7,          ID_ADD_TO_RACE,         VIRTKEY, NOINVERT
+    VK_F8,          ID_NEW_GLOBAL_TEAM,     VIRTKEY, NOINVERT
+    VK_NEXT,        ID_WSF_NEXT_TAB_WINDOW, VIRTKEY, CONTROL, NOINVERT
+    VK_PRIOR,       ID_WSF_PREVIOUS_TAB_WINDOW, VIRTKEY, CONTROL, NOINVERT
+    VK_RETURN,      ID_WSF_PROPERTIES,      VIRTKEY, ALT, NOINVERT
+    VK_TAB,         ID_WSF_NEXT_VIEW,       VIRTKEY, CONTROL, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,6,0,0
+ PRODUCTVERSION 1,6,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "http://www.spytech.cz\0"
+            VALUE "CompanyName", "SpyTech\0"
+            VALUE "FileDescription", "SpyTech Race Manager DLL\0"
+            VALUE "FileVersion", "1, 6, 0, 0\0"
+            VALUE "InternalName", "\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000-2004 SpyTech\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SpyTech Race Manager\0"
+            VALUE "ProductVersion", "1, 6, 0, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Data Managment.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

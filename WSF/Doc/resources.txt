@@ -1,0 +1,10 @@
+
+Resource ranges
+~~~~~~~~~~~~~~~
+
+#define _APS_NEXT_RESOURCE_VALUE        15000 - 15999
+#define _APS_NEXT_COMMAND_VALUE         45000 - 45799
+#define _APS_NEXT_CONTROL_VALUE         15000 - 15999
+#define _APS_NEXT_SYMED_VALUE           15000 - 15999
+
+Special WSF commands:			45800 - 45999

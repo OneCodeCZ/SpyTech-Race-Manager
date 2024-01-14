@@ -1,0 +1,40 @@
+///////////////////////////////////////////////////////////////////////////////
+//  ____________
+// |   |    _   |
+// | S | __|_|__|  WSF TODO & BUGS
+// | P |  /  |  |  ~~~~~~~~~~~~~~~
+// | Y | /-  |  |  Copyright (C)2000-2004 SpyTech
+// | T |  |  \  |
+// | E |  | _/  |  Author: Radek Tetik
+// | C |  |__|  |  Last changed: 2004
+// | H |  _||   |
+// |___|________|
+//
+///////////////////////////////////////////////////////////////////////////////
+
+
+BUGS
+~~~~
+- CWsfTabWnd: tooltips are badly positioned
+- CWsfTabWnd: '&' is interpreted on tabs as underscore of the next letter
+- CWsfPropertySheet: Default button bug 
+- CWsfPropertySheet: when all items on a page are disabled, the focus
+  is not set and Ctrl+PgUp/PgDown doesn't work
+- Remove WsfSetDirAttr.. and simliar, because it has been replaced by CWslFS class.
+
+TODO
+~~~~
+- Perform COMMIT only if there has been an SQL command executed
+- when closing modified doc, at first SHOW IT and then ask "Save it?"
+- OnCloseProperties(): allow to call SetActivePage(), SetFocus() methods
+- DDX_WslText(..., CWslDate,...) limit input line
+- Table Control sorting
+- Allow to rename root item in the CWsfTreeItemView
+- CWsfTreeItemView: Make better opening of the items, because
+	now at first all items are opened and later the
+	current view is closed -> flashing!
+- CWslString CWslXMLTreeItem::Encode(const char* pcsz) - optimize
+
+
+
+

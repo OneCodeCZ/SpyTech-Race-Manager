@@ -1,0 +1,594 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Czech resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CSY)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Measurement.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ENTITY_DEBUG DIALOG DISCARDABLE  0, 0, 223, 110
+STYLE DS_CONTROL | WS_CHILD | WS_CAPTION
+CAPTION "Entity Debug"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST,4,4,215,102,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_TRAINING_SETTINGS DIALOG DISCARDABLE  0, 0, 216, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Training Preferences"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,8,8,200,40
+    GROUPBOX        "",IDC_STATIC,8,56,200,88
+    CONTROL         "Manual control",IDC_MODE_MANUAL,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,16,8,67,10
+    CONTROL         "Semi-automatic control",IDC_MODE_SEMIAUTO,"Button",
+                    BS_AUTORADIOBUTTON,16,56,90,10
+    LTEXT           "Lane data reset after:",IDC_STATIC,16,24,80,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_CLEAR_AFTER,105,25,51,14,ES_AUTOHSCROLL
+    LTEXT           "[s]",IDC_STATIC,164,24,40,14,SS_CENTERIMAGE
+    LTEXT           "Prior to the 1st segment:",IDC_STATIC,16,71,80,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_BEFORE_RIDE,105,73,51,14,ES_AUTOHSCROLL
+    LTEXT           "[hh:mm:ss]",IDC_STATIC,164,72,40,14,SS_CENTERIMAGE
+    LTEXT           "Segment duration:",IDC_STATIC,16,87,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_RIDE_DURATION,105,89,51,14,ES_AUTOHSCROLL
+    LTEXT           "[hh:mm:ss]",IDC_STATIC,164,89,40,14,SS_CENTERIMAGE
+    LTEXT           "Pause duration:",IDC_STATIC,16,103,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PAUSE_DURATION,105,105,51,14,ES_AUTOHSCROLL
+    LTEXT           "[hh:mm:ss]",IDC_STATIC,164,104,40,14,SS_CENTERIMAGE
+    LTEXT           "Segment count:",IDC_STATIC,16,119,80,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NUM_RIDES,105,121,52,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,54,152,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,152,50,14
+END
+
+IDD_REMAP_SINGLE_TRACK DIALOG DISCARDABLE  0, 0, 220, 41
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Segment-Lane Mapping"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Here will be text from resources......",IDC_CHALLENGE,
+                    44,14,168,8
+    ICON            IDI_TRACK,IDC_STATIC,8,8,20,20
+END
+
+IDD_HDTS DIALOG DISCARDABLE  0, 0, 224, 26
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Fill in the track hundreds"
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_RETURN_TO_RACE_PART DIALOG DISCARDABLE  0, 0, 336, 269
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Revert to specific point in the race"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_GROUPS,20,40,144,100,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_RIDES,172,40,144,100,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Continue",IDC_CONTINUE,20,164,64,14
+    PUSHBUTTON      "The whole part again",IDC_WHOLE,20,184,64,14
+    PUSHBUTTON      "Revert to specific point",IDC_RETURN,20,204,64,14
+    PUSHBUTTON      "Terminate the part",IDC_END,4,184,12,14,NOT WS_VISIBLE | 
+                    WS_DISABLED
+    PUSHBUTTON      "Cance",IDCANCEL,20,244,64,14
+    LTEXT           "Groups:",IDC_STATIC,20,28,27,8
+    LTEXT           "Segments:",IDC_STATIC,172,28,18,8
+    GROUPBOX        "Revert point specification",IDC_STATIC,8,4,320,148
+    LTEXT           "Choose a group and a segment since which the race measurement shall be repeated.",
+                    IDC_STATIC,20,16,260,8
+    LTEXT           "This button erases all data acquired during the race part. The program returns to the status at its beginning.",
+                    IDC_STATIC,92,184,236,16
+    LTEXT           "This button shall continue the measurement where previously interrupted.",
+                    IDC_CONTINUE_INFO,92,164,236,16
+    LTEXT           "This button declares the race part correctly measured. The program shall advance to the next race part.",
+                    IDC_STATIC,4,204,12,16,NOT WS_VISIBLE | WS_DISABLED
+    LTEXT           "This button erases data acquired in all segments starting with the point you have specified in the upper part of this dialog.",
+                    IDC_STATIC,92,204,236,16
+    LTEXT           "This button leaves this dialog without making any changes.",
+                    IDC_STATIC,92,244,236,16,SS_CENTERIMAGE
+    LISTBOX         IDC_PARTS,4,224,12,12,LBS_NOINTEGRALHEIGHT | NOT 
+                    WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Race data reset",IDC_RESET,20,224,64,14
+    LTEXT           "Tímto tlaèítkem vymažete veškeré údaje poøízené bìhem závodu a vrátíte se do režimu ""Tvorba závodu"".",
+                    IDC_STATIC,92,224,236,16
+END
+
+IDD_RETURN_TO_QUALIFICATION DIALOG DISCARDABLE  0, 0, 260, 249
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST1,8,8,140,228,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Button1",IDC_BUTTON1,156,8,50,14
+END
+
+IDD_QUAL_REPAIR DIALOG DISCARDABLE  0, 0, 145, 22
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,4,4,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,48,4,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "OK",IDOK,92,4,50,14
+END
+
+IDD_RIDES_VIEW DIALOG DISCARDABLE  0, 0, 300, 208
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Race part selection:",IDC_RACE_PART_COMMENT,8,190,63,8,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_DISABLED | NOT 
+                    WS_GROUP
+    COMBOBOX        IDC_RACE_PART,80,188,116,30,CBS_DROPDOWN | CBS_SORT | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Edit...",IDC_EDIT,242,188,50,14
+    LTEXT           "Race part data:",IDC_STATIC,8,8,68,8
+END
+
+IDD_EVENT_DATA DIALOG DISCARDABLE  0, 0, 164, 205
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Racer's results in race"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,12,148,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,12,102,143,1
+    EDITTEXT        IDC_RIDE_1,48,20,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_2,48,34,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_3,48,48,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_4,48,62,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_5,48,76,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_6,120,20,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_7,120,34,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_8,120,48,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_9,120,62,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RIDE_10,120,76,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_LAPS_ELAPSED,120,110,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    EDITTEXT        IDC_HDTS,120,124,28,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_PENALIZATION,120,138,28,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_TOTAL_LAPS_ELAPSED,120,160,28,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER
+    LTEXT           "Segment 1",IDC_STATIC,16,20,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 2",IDC_STATIC,16,34,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 3",IDC_STATIC,16,48,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 4",IDC_STATIC,16,62,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 5",IDC_STATIC,16,76,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 6",IDC_STATIC,88,20,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 7",IDC_STATIC,88,34,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 8",IDC_STATIC,88,48,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 9",IDC_STATIC,88,62,32,12,SS_CENTERIMAGE
+    LTEXT           "Segment 10",IDC_STATIC,88,76,32,12,SS_CENTERIMAGE
+    LTEXT           "Hundreds:",IDC_STATIC,16,124,64,12,
+                    SS_CENTERIMAGE
+    LTEXT           "Penalty:",IDC_STATIC,16,138,64,12,SS_CENTERIMAGE
+    LTEXT           "Laps:",IDC_STATIC,16,110,64,12,
+                    SS_CENTERIMAGE
+    PUSHBUTTON      "OK",IDOK,32,182,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,88,182,50,14
+    LTEXT           "Total lap count:",IDC_STATIC,16,160,64,12,
+                    SS_CENTERIMAGE
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,16,154,132,1
+    LTEXT           "Lap count in segments:",IDC_CAPTION1,8,8,80,8
+    LTEXT           "Advanced",IDC_CAPTION2,8,98,48,8
+END
+
+IDD_EB_TEST DIALOG DISCARDABLE  0, 0, 252, 90
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "External Panel Test"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,100,68,50,14
+    PUSHBUTTON      "Reset",IDC_RESET,10,41,50,14
+    PUSHBUTTON      "UpdateLights",IDC_UPDATE_LIGHTS,70,41,50,14
+    PUSHBUTTON      "UpdateLaps",IDC_UPDATE_LAPS,130,41,50,14
+    PUSHBUTTON      "Ping",IDC_PING,10,20,50,14
+    EDITTEXT        IDC_LIGHTS,70,20,50,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LANE,130,20,20,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LAPS,155,20,25,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "UpdateState",IDC_UPDATE_STATE,190,41,50,14
+    EDITTEXT        IDC_STATE,190,20,50,14,ES_AUTOHSCROLL
+    LTEXT           "Lights",IDC_STATIC,70,10,20,8
+    LTEXT           "Lane",IDC_STATIC,130,10,17,8
+    LTEXT           "Laps",IDC_STATIC,155,10,16,8
+    LTEXT           "State",IDC_STATIC,190,10,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,65,10,1,45
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,125,10,1,44
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,185,10,1,44
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ENTITY_DEBUG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_TRAINING_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_REMAP_SINGLE_TRACK, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 34
+    END
+
+    IDD_HDTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 217
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 19
+    END
+
+    IDD_RETURN_TO_RACE_PART, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 329
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_RETURN_TO_QUALIFICATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 253
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 242
+    END
+
+    IDD_QUAL_REPAIR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 15
+    END
+
+    IDD_RIDES_VIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 201
+    END
+
+    IDD_EVENT_DATA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 198
+    END
+
+    IDD_EB_TEST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_STOPS               ICON    DISCARDABLE     "res\\stops.ico"
+IDI_POINTS              ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_TRACK               ICON    DISCARDABLE     "res\\track.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_CONTEXT_MENUS MENU DISCARDABLE 
+BEGIN
+    POPUP "TIResults"
+    BEGIN
+        MENUITEM "&Otevøít\tEnter",             ID_WSF_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "&Tisk\tCtrl+P",               ID_FILE_PRINT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_NORMAL_ICONS        BITMAP  DISCARDABLE     "res\\normal_icoins.bmp"
+IDB_SMALL_ICONS         BITMAP  DISCARDABLE     "res\\small_icons.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_EDITING_OF_RESULTS  "Race results editing"
+    IDS_ERROR_OPENING_SOUND_OUTPUT 
+                            "Could not open wave output. Either there is no sound card installed or the device is in use by another application."
+    IDS_ERROR_OPENING_STM2008 "Could not connect to STM/2008"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CONFIRM             "Confirm"
+    IDS_ARE_DATA_OK         "Have the data been entered correctly?"
+    IDS_GO_OVER_SENSOR_X    "Pass over the sensor at lane %d."
+    IDS_LANE_X_IS_SENSOR_Y  "Lane %d assigned to sensor %d"
+    IDS_NTH_GROUP           "Group %d"
+    IDS_RIDE_X_OF_GROUP_Y   "Segment %d of group %d"
+    IDS_OK_TO_CANCEL_RACE_PART_DATA 
+                            "Do you really want to reset all data of the current race part?"
+    IDS_OK_TO_RESET_INTO_RACE_PART 
+                            "Do you really want to revert to specified point in the race?"
+    IDS_OK_TO_END_RACEPART  "Do you really want to terminate the race part?"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_OK_TO_CONTINUE_MEASUREMENT 
+                            "Do you really wan to continue the race measurement?"
+    IDS_OK_TO_RESET_WHOLE_RACE 
+                            "Do you really want to revert to the race definition?\nWARNING: All the data acquired until now shall be destroyed."
+    IDS_SEGMENT_NUMBER_IN_HEADER "%d."
+    IDS_CHOOSE_RACER_TO_EDIT 
+                            "Pick a racer to edit."
+    IDS_TOO_MUCH_RACERS_SELECTED "Too many racers selected."
+    IDS_NO_EDIT_RACER_DIDNT_START 
+                            "Unable to edit. The selected racer has not yet participated in the current race part."
+    IDS_ERROR_OPENIN_COMPORT 
+                            "Could not connect to the specified COM port. It is either used by another program or it has not been set up correctly in the system. Unable to connect the STM/2008."
+    IDS_OK_TO_BEGIN_NEXT_PART 
+                            "Do you really want to begin with the measurement of the next race part?"
+    IDS_PART_INTERRUPTED_CONTINUE_POSSIBLE 
+                            "The race part measurement has been interrupted. The measurement may be finished anytime later using Race -> Continue Measuring Race Part"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_STM2008_NOT_FOUND   "Could not find STM/2008."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RANK                "Rank"
+    IDS_TRACK_SEGMENTS      "Track segments"
+    IDS_RACER               "Racer"
+    IDS_TOTAL               "Total"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PENALTY_ABRV        "Pnl."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_SHEET_GROUP_SEPARATION "Racers in Groups"
+    IDS_SHEET_FINAL_RESULTS "Final Results"
+    IDS_SHEET_TREE_GROUP_SEPARATION "Racers in Groups"
+    IDS_IS_RACE_PART_CORRECTLY_MEASURED 
+                            "Was the current race part measured correctly?"
+    IDS_SHEET_TREE_FINAL_RESULTS "Result Report"
+    IDS_SHEET_TREE_LIST_OF_RACERS "List of registered racers"
+    IDS_SHEET_TREE_GROUP    "%s – group %s"
+    IDS_SHEET_TREE_RACE_PART_RESULTS "%s – overall ranking"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_COULD_NOT_READ_COMPORT_SETTINGS "Unable to read the port set-up."
+    IDS_TRAINING_NOT_ENOUGH_RIDES "Number of rides must be greater than zero."
+    IDS_HTML_CHARSET        "charset-1252"
+    IDS_IMPROPER_TIME_SYNTAX "Incorrect time format"
+    IDS_STM2008_DEAD        "STM/2008 communication error. The measurement will be interrupted."
+    IDS_STM2008_NOT_CONNECTED "Unable to connect to STM/2008."
+    IDS_USER_STOPPED_MEASUREMENT 
+                            "The measurement has been interrupted on user's request."
+    IDS_INTERRUPT_MEASUREMENT "Do you really want to interrupt the measurement?"
+    IDS_FAILED_LOG_DIR_CREATION 
+                            "Could not create the trace output directory."
+    IDS_COULD_NOT_REPORT    "Unable to trace the race data."
+    IDS_FILL_HUNDREDS       "Fill-in the track hundreds."
+    IDS_RACE_CAPTION_GROUP  "Group"
+    IDS_RACE_CAPTION_AUXILIARY_WARMUP "Auxiliary Warm-up"
+    IDS_RACE_CAPTION_WARMUP "Warm-up"
+    IDS_DEFAULT_PRACTICE_CAPTION "Practice"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RACE_CAPTION_QUALIFICATION "Qualification"
+    IDS_RACE_CAPTION_SEGMENT "Segment"
+    IDS_RACE_CAPTION_CURRENT_RESULTS "Current Results"
+    IDS_RACE_CAPTION_CURRENT_TOP10 "The Current Top 10"
+    IDS_RACE_CAPTION_NEXT_RACER "Next Racer"
+    IDS_RACE_CAPTION_NEXT_RACERS "Next Racers"
+    IDS_RACE_CAPTION_RACERS_NEXT_GROUP "Racers of the next group"
+    IDS_RACE_CAPTION_MAIN_LAST_LAP "Last Lap"
+    IDS_RACE_CAPTION_MAIN_BEST_LAP "Best Lap"
+    IDS_RACE_CAPTION_MAIN_NUM_LAPS "Laps"
+    IDS_RACE_CAPTION_MAIN_AVGSPD "Avg. speed [km/h]"
+    IDS_RACE_CAPTION_MAIN_CURRENT_RANK "Current rank"
+    IDS_RACE_CAPTION_MAIN_LANE "Lane"
+    IDS_RACE_CAPTION_MAIN_RACER "Racer"
+    IDS_RACE_CAPTION_MAIN_TOTAL "Total"
+    IDS_RACE_CAPTION_MAIN_GAP "Gap"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_RACE_CAPTION_MAIN_PROGNOSIS "Prognosis"
+    IDS_RACE_CAPTION_MAIN_POSITION "Position"
+    IDS_RACE_CAPTION_TIME_TOSTART "Countdown to start"
+    IDS_RACE_CAPTION_TIME_TOEND "Countdown to end"
+    IDS_RACE_CAPTION_TIME_TOWARMUP "Countdown to warm-up"
+    IDS_RACE_CAPTION_TIME_PRACTICE_ELAPSED "Practice time elapsed"
+    IDS_RACE_CAPTION_TIME_WUP_TOEND "End of warm-up countdown"
+    IDS_RACE_CAPTION_TIME_ENDATTEMPT "End of attempt"
+    IDS_RACE_CAPTION_TIME_ENDQUAL "End of qualification"
+    IDS_RACE_CAPTION_MAIN_LAST_LAPS "Last Laps"
+    IDS_HTML_LIST_OF_GROUPS "%s – List of groups"
+    IDS_HTML_LIST_REGD_RACERS "List of Registered Racers"
+    IDS_HTML_RESULTS_GROUP  "%s – Group %s"
+    IDS_HTML_FINAL_RESULTS  "Race Results"
+    IDS_HTML_VENUE          "Venue"
+    IDS_HTML_ORGANIZER      "Organizer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HTML_RACE_DIRECTOR  "Race Director"
+    IDS_HTML_TRACK_NAME     "Track Name"
+    IDS_HTML_NO_GROUPS      "There are no groups in this race"
+    IDS_HTML_GROUP          "Group"
+    IDS_HTML_STARTNO        "Start No."
+    IDS_HTML_RACER          "Racer"
+    IDS_HTML_RANK           "Rank"
+    IDS_HTML_LAP_COUNT      "Lap Count"
+    IDS_HTML_BEST_TIME      "Best Time"
+    IDS_HTML_2NDBEST        "2<sup>nd</sup> best lap"
+    IDS_HTML_BESTLAP        "Best Lap"
+    IDS_HTML_LAPS           "Laps"
+    IDS_HTML_PENALIZATION_SHORT "Pnl."
+    IDS_HTML_TOTAL          "Total"
+    IDS_HTML_TOTAL_LAPS     "Total Laps"
+    IDS_HTML_HEATS          "Heats"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_HTML_QUARTER        "Quarter"
+    IDS_HTML_SEMIFINAL_SHORT "Semi."
+    IDS_HTML_FINAL          "Final"
+    IDS_HTML_QUALIFICATION_SHORT "Qual."
+    IDS_HTML_POINTS_SHORT   "Pts."
+    IDS_PART_QUAL           "Qualification"
+    IDS_PART_HEATS          "Heats"
+    IDS_PART_QUARTER        "Quarterfinal"
+    IDS_PART_SEMI           "Semifinal"
+    IDS_PART_FINAL          "Final"
+    IDS_PART_ERROR          "Part name error"
+END
+
+#endif    // Czech resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Measurement.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,74 @@
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body bgcolor="#FFFFFF">
+<p><a href="javascript:history.back();">Back</a> | <a href="index.html">Content</a></p>
+<h2>Race definition</h2>
+<p>
+  A new race is created using <i>File | New | Race</i> command (or ctrl+N shortcut
+  or appropriate icon in the toolbar). First, you get prompted to choose a race system
+  to be used. In the popup window, you may choose any race system you have previously
+  defined. Then press OK button.
+<p>
+  Then, the property sheet window <i>Race properties</i> pops up.
+</p>
+  <img src="img/dlg_race.gif"><br>
+  
+</p>
+  Fill in the
+  organization data (to be displayed on the result sheets), specify, whether
+  this is a race of individuals or teams, and the <i>minimal lap time</i>. This value
+  is the time for which any sensor is inactive after a car passed through, in order to
+  partially avoid the problem of false lane counts when multiple cars are on a
+  single lane (e.g. after an accident). The selection of the minimal lap time is
+  to be carefully considered. We recommend approx. 80% of the lap record on your track.
+  For the G27 category of the EC 2000 in Zlín we chose 1750 ms while the fastest laps
+  were as much as 1950 ms.
+<p>
+  After the OK button is pushed, the race definition itself is begun. In the
+  tree view window at the left margin of the application window a new tree
+  view named <i>Race</i> appears. Now with these item: <i>Race -- definition</i>
+  with the folder of <i>Documents</i> and the race system you have selected.
+  The <i>Documents</i> folder is now empty. It will contain all the documents
+  automatically generated during the race.
+<p>
+  Now it is necessary to define, which racers are about to attend the race.
+  Switch back to the <i>Database</i> tree by clicking on its tab in the bottom
+  left corner of the application window. Double-click on the <i>Racers</i> folder.
+  Their list appears on the right side of the application window. (The program 
+  behaves in the similar manner as the Windows Explorer.)
+  Then go back to the <i>Race</i> tree.
+<p>
+  Use your mouse to drag-and-drop the selected racers onto the
+  <i>Race -- definition</i>. (Drag and drop: Click and hold the mouse button
+  on the selected racer. Then, holding the mouse button down, drag the mouse pointer
+  onto the target item. A small "+" sign appears by the mouse cursor if you
+  reach the target item. Then release the mouse button.)
+  You may also select a racer and then press the F8 key or issue the <i>Race | Add to race</i>
+  command.
+<p>
+  For each racer inserted into the race, the following window appears allowing
+  you to change the racer's display name and starting position:
+</p>
+<img src="img/dlg_racer.gif">
+<img src="img/dlg_racer_in_race.gif">
+<p>
+  To modify the properties of any item in the race, simply double-click on the
+  item in the <i>Race</i> tree.
+<p>
+  <b>Note:</b> In the subsequent text, if not stated otherwise, all the commands
+  are both in the <i>Race</i> menu and the context menu of the <i>Race</i>
+  item in the </i>Race</i> tree.
+<p>
+  The end of the race definition is done by the <i>End of race definition</i>
+  command. You get prompted to store the race settings onto your hard drive.
+  The race settings (and measured data) are stored into files with the ".rce"
+  extension. You may manipulate with these files exactly the same way as with
+  the documents created using your favorite word processing software.
+</p>
+</body>
+</html>
